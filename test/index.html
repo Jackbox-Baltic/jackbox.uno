@@ -46,7 +46,7 @@
           <a data-v-082a7a6a="" href="https://jackbox.tv" class="">ENGLISH</a>
         </li>
         <li data-v-082a7a6a="">
-          <a data-v-082a7a6a="" target="_blank" class="open-popup ee"></a>
+          <a data-v-082a7a6a="" target="_blank" class="open-popupee ee"></a>
         </li>
         <li data-v-082a7a6a="">
           <a data-v-082a7a6a="" href="http://lv.jackbox.uno" target="_blank" class="lv"></a>
@@ -106,11 +106,24 @@
       <div data-v-e6c8e964="" class="actions"><button data-v-e6c8e964="" onclick="location.href='https://jackbox.tv'">ОК</button></div>
     </div>
   </div>
+  <div data-v-a0fd2f6c="" class="modalee jbg modalee-transition-leave-active">
+    <div data-v-e6c8e964="" data-v-a0fd2f6c="" class="jbg error contentee">
+      <img data-v-e6c8e964="" src="http://jackbox.uno/bubs.gif" alt="M Bubs" class="bubz image">
+      <h3 data-v-e6c8e964="" class="text">Ups...</h3>
+      <h3 data-v-e6c8e964="" class="subtext">Sait ei ole veel valmis. "OK" nupp suunab sind töötavale inglisekeelsele saidile.</h3>
+      <div data-v-e6c8e964="" class="actions"><button data-v-e6c8e964="" onclick="location.href='https://jackbox.tv'">ОК</button></div>
+    </div>
+  </div>
   <script>
     let popupBg = document.querySelector('.modal');
     let popup = document.querySelector('.content');
     let openPopupButtons = document.querySelectorAll('.open-popup');
     let closePopupButton = document.querySelector('.actions');
+
+    let popupBgee = document.querySelector('.modalee');
+    let popupee = document.querySelector('.contentee');
+    let openPopupButtonsee = document.querySelectorAll('.open-popupee');
+    let closePopupButtonee = document.querySelector('.actions');
     
     openPopupButtons.forEach((button) => {
         button.addEventListener('click', (e) => {
@@ -125,10 +138,30 @@
         popup.classList.remove('active');
     });
 
+    openPopupButtonsee.forEach((button) => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            popupBgee.classList.add('active');
+            popupee.classList.add('active');
+        })
+    });
+
+    closePopupButtonee.addEventListener('click',() => {
+        popupBgee.classList.remove('active');
+        popupee.classList.remove('active');
+    });
+
     document.addEventListener('click', (e) => {
         if(e.target === popupBg) {
             popupBg.classList.remove('active');
             popup.classList.remove('active');
+        }
+    });
+
+    document.addEventListener('click', (e) => {
+        if(e.target === popupBgee) {
+            popupBgee.classList.remove('active');
+            popupee.classList.remove('active');
         }
     });
 
