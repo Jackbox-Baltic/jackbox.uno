@@ -1,0 +1,390 @@
+html, body {
+    border: 0;
+    font-family: "Helvetica-Neue","Helvetica",Arial,sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+div, span, object, iframe, img, table, caption, thead, tbody, tfoot, tr, tr, td, article, aside, canvas, details, figure, hgroup, menu, nav, footer, header, section, summary, mark, audio, video {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, ins, q, samp, small, strong, sub, sup, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, legend, label {
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+.jbg[data-v-2ba6adc4] {
+    background: #fff;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.recent[data-v-2ba6adc4] {
+    padding: 30px 15px;
+    background: #e0e0e0;
+    box-shadow: inset 0 10px 10px -16px #aaa;
+}
+
+.constrain {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    min-width: 320px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.recent .top-items[data-v-2ba6adc4] {
+    margin: 0 auto 12px;
+    max-width: 375px;
+}
+
+.recent h3[data-v-2ba6adc4] {
+    display: inline-block;
+    font-size: 14px;
+    text-align: left;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.recent .view-all[data-v-2ba6adc4] {
+    float: right;
+    width: auto;
+    height: auto;
+    padding: 3px 10px 2px;
+    margin: 0;
+    background: #3241ce;
+    font-size: 12px;
+    box-shadow: none;
+}
+
+.jbg button[data-v-2ba6adc4] {
+    cursor: pointer;
+    height: 48px;
+    width: calc(100% - 50px);
+    margin: 10px 25px 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #4254f4;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 5px 0 0 #0e167d;
+    transition: color .5s,background-position .5s,box-shadow .5s;
+}
+
+button {
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+.past-game[data-v-556a942f] {
+    position: relative;
+    margin: 0 auto 20px;
+    max-width: 375px;
+    transform: translateZ(0);
+}
+
+.past-game.home .card[data-v-556a942f] {
+    box-shadow: 0 0 12px 0 #999;
+}
+
+.past-game.home .card[data-v-556a942f]:hover {
+    box-shadow: 0 5px 12px 0 #999;
+}
+.past-game.managing .new[data-v-556a942f],
+.past-game.managing .items[data-v-556a942f],
+.past-game.managing .cta[data-v-556a942f] {
+    opacity: 0;
+}
+.past-game.managing .name[data-v-556a942f] {
+    color: #cf2929;
+}
+.past-game.managing.confirming .card[data-v-556a942f] {
+    background: #cf2929;
+    border-color: #cf2929;
+}
+.past-game.managing.confirming .name[data-v-556a942f] {
+    color: #e0e0e0;
+}
+.past-game.managing.confirming .date[data-v-556a942f] {
+    color: #e0e0e0;
+}
+.past-game.managing.confirming .date span[data-v-556a942f] {
+    color: #e0e0e0;
+}
+
+.jbg a[data-v-2ba6adc4] {
+  color: #4254f4;
+  text-decoration: none;
+}
+
+.jbg a[data-v-2ba6adc4] {
+    color: #4254f4;
+    text-decoration: none;
+  }
+
+.card[data-v-556a942f] {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border: 4px solid #fff;
+    border-radius: 14px;
+    box-shadow: 0 5px 0 0 #0e167d;
+    overflow: hidden;
+    font-weight: bold;
+    transform: translateY(0);
+    transition: .25s box-shadow,.25s transform,.1s color,.1s border-color;
+}
+
+.card[data-v-556a942f]:hover {
+    box-shadow: 0 10px 0 0 #0e167d;
+    transform: translateY(-2px);
+  }
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.image.fallback[data-v-556a942f] {
+    background-position: center;
+    background-size: cover;
+}
+
+.image.fallback img[data-v-556a942f] {
+    display: none;
+  }
+
+.image[data-v-556a942f] {
+    position: relative;
+    width: 100%;
+    padding-top: 50%;
+    background: #333;
+}
+
+.image.quiplash2-international[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/1b2050f7dc743813f6ce.jpg");
+  }
+.image.DrawfulGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/8aba9344c193c8434df4.jpg");
+  }
+.image.TeeKOGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/b81bc4a5b54e6dd815be.jpg");
+  }
+.image.Quiplash2Game[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/57daf6ac1e1dfa803a1e.jpg");
+  }
+.image.TriviaDeathResults[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/82a3a02741908fad4680.jpg");
+  }
+.image.STIGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/6e9eefc4c10c426167f1.png");
+  }
+.image.MonsterMingleGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/8c1a92c68edc29885eff.png");
+  }
+.image.BRKGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/010db63e2a14f71f3325.png");
+  }
+.image.OverdrawnGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/8e749c5c4b73f8394084.png");
+  }
+.image.YDKJ2018Game[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/1762c9f4b72dcf4d880a.png");
+  }
+.image.SplitTheRoomGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/d961350c06261b45ee27.png");
+  }
+.image.RapBattleGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/c71beb692f3c088f13e5.png");
+  }
+.image.SlingShootGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/4a77cc258dc909b7a2f6.png");
+  }
+.image.PatentlyStupidGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/03b24b34ebcc67ec9fe7.png");
+  }
+.image.TriviaDeath2Game[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/84e84f7ec7cdf6f68508.png");
+  }
+.image.RoleModelsGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/f5984ee8390199ac32c8.png");
+  }
+.image.JokeboatGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/8b89c1c98d4b74386025.png");
+  }
+.image.RidictionaryGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/91d05d3a49e59d8d3410.png");
+  }
+.image.PushTheButtonGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/45f66fc9d6e36fefc050.png");
+  }
+.image.JackboxTalksGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/a4a4192f4196c3871a34.png");
+  }
+.image.quiplash3Game[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/64f8cf6b6c3916630667.jpg");
+  }
+.image.EverydayGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/bbd5099b768913b35d60.jpg");
+  }
+.image.WorldChampionsGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/cbfe6aeb45e88a3793ba.jpg");
+  }
+.image.BlankyBlankGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/3c9cc76922f5f3ddddfb.jpg");
+  }
+.image.DrawfulAnimateGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/e2d2cb0e34104c3b253b.png");
+  }
+.image.TheWheelGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/bd49b7e0081b465bd2a8.png");
+  }
+.image.JobGameGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/0edf2fde34bf729b8e5b.png");
+  }
+.image.SurveyBombGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/1b98f6cc8fd0c56aa890.jpg");
+  }
+.image.MurderDetectivesGame[data-v-556a942f] {
+    background-image: url("https://jackbox.tv/assets/1e3923562ee1bb2f491a.png");
+  }
+
+.cta[data-v-556a942f] {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    padding: 0 10px;
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    color: #0e167d;
+    font-size: 12px;
+    white-space: nowrap;
+    transform: translateX(-50%);
+    transition: opacity .1s;
+}
+
+.cta svg[data-v-556a942f] {
+    position: relative;
+    top: 1px;
+    width: 11px;
+    height: 11px;
+    margin-left: 1px;
+    fill: #505050;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.content[data-v-556a942f] {
+    width: 100%;
+    padding: 5px 8px 0;
+    overflow: hidden;
+}
+
+.name[data-v-556a942f] {
+    float: left;
+    width: 75%;
+    padding-top: 3px;
+    color: #0e167d;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: color .1s;
+    line-height: 1.3;
+}
+
+.date[data-v-556a942f] {
+    float: right;
+    width: 25%;
+    color: #000;
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: right;
+}
+
+.date span[data-v-556a942f] {
+    display: block;
+    color: #333;
+    font-size: 8px;
+}
+
+.new[data-v-556a942f] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    padding: 55px 0 1px;
+    background: rgba(0,0,0,.85);
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    transition: opacity .1s;
+}
+
+.new[data-v-556a942f]::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 10px;
+    margin-left: -4px;
+    width: 8px;
+    height: 8px;
+    background: #cf2929;
+    border-radius: 4px;
+}
+
+.recent .more[data-v-2ba6adc4] {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+}
