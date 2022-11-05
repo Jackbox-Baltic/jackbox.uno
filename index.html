@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en-US" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Jackbox.UNO</title>
+    <meta name="viewport" content="minimal-ui,width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="og:url" content="https://jackbox.uno/">
+    <meta name="og:title" content="Jackbox.UNO">
+    <meta name="og:type" content="website">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="supported-color-schemes" content="">
+    <meta name="color-scheme" content="#4254F4">
+    <meta name="theme-color" content="#4254F4">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="application-name" content="Jackbox.UNO" />
+    <meta name="msapplication-TileColor" content="#0067FF" />
+    <script>
+        document.documentElement.className = document.documentElement.className.replace("no-js", "js")
+    </script>
+    <link href="main.css" rel="stylesheet">
+    <link href="popup.css" rel="stylesheet">
+</head>
+<body style="background-color:#4254f4">
+  <div data-v-8691596e="" data-v-2ba6adc4="" class="top-bar">
+    <nav data-v-082a7a6a="" data-v-8691596e="" class="nav screen">
+      <ul data-v-082a7a6a="">
+        <li data-v-082a7a6a="" class="version">Jackbox Baltic</li>
+        <!--<li data-v-082a7a6a="" class="twitch">
+          <a data-v-082a7a6a="" href="http://help.jackboxgames.com" target="_blank">ESTONIAN</a>
+        </li>
+        <li data-v-082a7a6a="" class="twitch">
+          <a data-v-082a7a6a="" href="http://help.jackboxgames.com" target="_blank">LATVIAN</a>
+        </li>
+        <li data-v-082a7a6a="" class="twitch">
+          <a data-v-082a7a6a="" href="http://help.jackboxgames.com" target="_blank">LITHUANIAN</a>
+        </li>-->
+        <li data-v-082a7a6a="" class="moderator">
+          <a data-v-082a7a6a="" href="https://jackbox.tv" class="">ENGLISH</a>
+        </li>
+        <li data-v-082a7a6a="">
+          <a data-v-082a7a6a="" target="_blank" class="open-popup">ESTONIAN</a>
+        </li>
+        <li data-v-082a7a6a="">
+          <a data-v-082a7a6a="" href="http://lv.jackbox.uno" target="_blank">LATVIAN</a>
+        </li>
+        <li data-v-082a7a6a="">
+          <a data-v-082a7a6a="" target="_blank" class="open-popup">LITHUANIAN</a>
+        </li>
+        <li data-v-082a7a6a="">
+          <a data-v-082a7a6a="" href="https://discord.gg/TNK3wsHHUW" target="_blank">DISCORD SERVER<div data-v-082a7a6a="" class="indicator"></div></a>
+        </li>
+        <!--<li data-v-082a7a6a="">
+          <a data-v-082a7a6a="" href="https://jackboxgames.us7.list-manage.com/subscribe?u=a181fa3b606c035e1cee11b76&amp;id=eb7f0081d6" target="_blank"> MAILING LIST </a>
+        </li>-->
+        <li data-v-082a7a6a="" class="version">4.2.10</li>
+      </ul>
+    </nav>
+  </div>
+  <div data-v-a0fd2f6c="" class="modal jbg modal-transition-leave-active">
+    <div data-v-e6c8e964="" data-v-a0fd2f6c="" class="jbg error content">
+      <img data-v-e6c8e964="" src="http://jackbox.uno/bubs.gif" alt="M Bubs" class="bubz image">
+      <h3 data-v-e6c8e964="" class="text">Oops...</h3>
+      <h3 data-v-e6c8e964="" class="subtext">At the moment, the site is still not ready. Clicking on "OK" will take you to the English version.</h3>
+      <div data-v-e6c8e964="" class="actions"><button data-v-e6c8e964="" onclick="location.href='https://jackbox.tv'">ОК</button></div>
+    </div>
+  </div>
+  <script>
+    let popupBg = document.querySelector('.modal');
+    let popup = document.querySelector('.content');
+    let openPopupButtons = document.querySelectorAll('.open-popup');
+    let closePopupButton = document.querySelector('.actions');
+    
+    openPopupButtons.forEach((button) => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            popupBg.classList.add('active');
+            popup.classList.add('active');
+        })
+    });
+
+    closePopupButton.addEventListener('click',() => {
+        popupBg.classList.remove('active');
+        popup.classList.remove('active');
+    });
+
+    document.addEventListener('click', (e) => {
+        if(e.target === popupBg) {
+            popupBg.classList.remove('active');
+            popup.classList.remove('active');
+        }
+    });
+  </script>
+</body>
+</html>
