@@ -24,13 +24,11 @@
     <link href="main.css" rel="stylesheet">
     <link href="popup.css" rel="stylesheet">
     <link href="testrecent.css" rel="stylesheet">
-    <link href="toggletheme.css" rel="stylesheet">
     <link href="header.css" rel="stylesheet">
-    <link href="wow.css" rel="stylesheet">
 </head>
-<body id="theme" class="theme LIGHT-theme">
+<body>
   <div>
-    <header class="header" data-v-0c67992c="">
+    <header id="header" class="header" data-v-0c67992c="">
       <div class="constrain" data-v-0c67992c="">
         <div class="logo" data-v-0c67992c="">jackbox baltic</div>
         <a data-v-0c67992c="" href="#news">faq</a>
@@ -68,14 +66,15 @@
           <a data-v-082a7a6a="" href="https://lt.jackbox.uno" target="_blank" class="lt"></a>
         </li>
         <li data-v-082a7a6a="">
-          <a data-v-082a7a6a="" href="https://discord.gg/TNK3wsHHUW" target="_blank">DISCORD SERVER<div data-v-082a7a6a="" class="indicator"></div></a>
+          <a data-v-082a7a6a="" href="https://discord.gg/TNK3wsHHUW" target="_blank">DISCORD SERVER<div data-v-082a7a6a="" id="indicator" class="indicator"></div></a>
+        </li>
+        <li data-v-082a7a6a="">
+          <a data-v-082a7a6a="" id="tct" onclick="ladtheme()">ON DARK THEME</a>
         </li>
         <li data-v-082a7a6a="" class="version">
-          <a data-v-1e5a97d3="">Site: 221206</a>
+          <a data-v-1e5a97d3="">Site: 221207</a>
         </li>
-        <!--<li data-v-082a7a6a="">
-          <a data-v-082a7a6a="" id="button">ON DARK THEME</a>
-        </li>
+        <!--
         <li data-v-082a7a6a="">
           <a data-v-082a7a6a="" href="https://jackboxgames.us7.list-manage.com/subscribe?u=a181fa3b606c035e1cee11b76&amp;id=eb7f0081d6" target="_blank"> MAILING LIST </a>
         </li>-->
@@ -181,27 +180,23 @@
         }
     });
 
-/* document.querySelector('.dark').addEventListener('mouseover', function(event)
-      {   
-        document.body.style.backgroundColor = '#9d2235'
-      }, false);
+    function ladtheme() {
+      var element = document.body;
+      element.classList.toggle("dark-theme");
 
-    const theme = document.getElementById('theme');
-    const button = document.getElementById('button');
-
-    document.getElementById('button').addEventListener('click', function() {
-
-      if (!document.querySelector(".theme").classList.contains("DARK-theme")) {
-        theme.classList.add("DARK-theme");
-        theme.classList.remove("LIGHT-theme");
-
+      var x = document.getElementById("tct");
+      if (x.innerHTML === "ON DARK THEME") {
+        x.innerHTML = "ON LIGHT THEME";
       } else {
-        theme.classList.remove("DARK-theme");
-        theme.classList.add("LIGHT-theme");
+        x.innerHTML = "ON DARK THEME";
       }
 
-      button.innerHTML == 'ON DARK THEME' ? button.innerHTML = 'ON LIGHT THEME' : button.innerHTML = 'ON DARK THEME';
-    });*/
+      var indicator = document.getElementById("indicator");
+      indicator.classList.toggle("indicator-dark-theme");
+
+      var header = document.getElementById("header");
+      header.classList.toggle("header-dark-theme");
+    }
   </script>
 </body>
 </html>

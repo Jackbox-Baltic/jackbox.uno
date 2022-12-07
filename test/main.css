@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -8,12 +8,16 @@
     font-weight: 600;
 }
 
-.LIGHT-theme {
+body {
   background-color: #3241ce
 }
 
-.DARK-theme {
+.dark-theme {
   background-color: #0a1420
+}
+
+.top-bar[data-v-8691596e] {
+    padding: 40px 15px 0;
 }
 
 .jbg[data-v-082a7a6a] {
@@ -217,7 +221,28 @@
     border: 4px solid #3241ce;
 }
 
+.nav li a .indicator-dark-theme[data-v-082a7a6a] {
+    width: 24px;
+    height: 24px;
+    top: -10px;
+    left: auto;
+    right: -10px;
+    border: 4px solid #0a1420;
+}
+
 [data-v-8691596e] .indicator {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0px;
+    left: 16px;
+    background-color: #38a65d;
+    border: 3px solid #4254f4;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+[data-v-8691596e] .indicator-dark-theme {
     position: absolute;
     width: 18px;
     height: 18px;
