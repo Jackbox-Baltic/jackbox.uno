@@ -47,32 +47,3 @@ document.addEventListener('click', (e) => {
 		popupee.classList.remove('active');
 	}
 });
-
-function ladtheme() {
-	const toggleTheme = document.querySelector('.toggle-theme')
-	let el = document.documentElement
-	var x = document.getElementById("tct");
-	console.log('Found!')
-
-	toggleTheme.addEventListener('click', () => {
-        console.log('It works!')
-		if (el.hasAttribute('data-theme')) {
-			el.removeAttribute('data-theme')
-			x.innerHTML = "ON DARK THEME";
-			localStorage.removeItem('theme')
-            console.log('The light theme has been turned on!')
-		} else {
-			el.setAttribute('data-theme', 'dark')
-			x.innerHTML = "ON LIGHT THEME";
-			localStorage.setItem('theme', 'dark')
-            console.log('The dark theme has been turned on!')
-		}
-	})
-
-	if (localStorage.getItem('theme') !== null) {
-		el.setAttribute('data-theme', 'dark')
-		x.innerHTML = "ON LIGHT THEME";
-	}
-}
-
-ladtheme()

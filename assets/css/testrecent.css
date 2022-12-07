@@ -33,12 +33,12 @@ div {
     font-family: Helvetica,Arial,sans-serif;
     font-size: 10px;
     font-weight: bold;
-    color: #333;
+    color: var(--textPrimary);
 }
 
 .recent[data-v-2ba6adc4] {
     padding: 30px 15px;
-    background: #e0e0e0;
+    background: var(--bgrecent);
     box-shadow: inset 0 10px 10px -16px #aaa;
 }
 
@@ -130,11 +130,11 @@ button {
 }
 
 .past-game.home .card[data-v-556a942f] {
-    box-shadow: 0 0 12px 0 #999;
+    box-shadow: 0 0 12px 0 var(--shadows);
 }
 
 .past-game.home .card[data-v-556a942f]:hover {
-    box-shadow: 0 5px 12px 0 #999;
+    box-shadow: 0 5px 12px 0 var(--shadows);
 }
 .past-game.managing .new[data-v-556a942f],
 .past-game.managing .items[data-v-556a942f],
@@ -207,6 +207,13 @@ a:-webkit-any-link {
     width: 100%;
     padding-top: 50%;
     background: #333;
+}
+
+.image.tjpp[data-v-556a942f] {
+  background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2019/07/PP1_tile.jpg");
+}
+.image.tjpp9[data-v-556a942f] {
+  background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2022/08/pp9temptile.jpg");
 }
 
 .image.quiplash2-international[data-v-556a942f] {

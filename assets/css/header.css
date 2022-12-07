@@ -9,11 +9,9 @@
     user-select: none;
     color: #fff;
     z-index: 100;
-    -webkit-transition: all 0.5s ease;
-                transition: all 0.5s ease;
 }
 
-.constrain {
+.constrain[data-v-0c67992c] {
     overflow: hidden;
     width: 100%;
     min-height: 100%;
@@ -24,7 +22,7 @@
 }
 
 .header a[data-v-0c67992c] {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.966);
     text-align: right;
     text-decoration: none;
     padding: 0px 16px;
@@ -34,24 +32,49 @@
             transition: all 0.5s ease;
 }
 
-.header .logo[data-v-0c67992c] {
+.header a.non[data-v-0c67992c] {
+    color: #fff;
+    text-align: right;
+    text-decoration: none;
+    padding: 0px 16px;
+    float: right;
+    font-weight: 800;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+.header div.logo a[data-v-0c67993c] {
     color: #fff;
     text-align: center;
     text-decoration: none;
+    padding-left: 16px;
     float: left;
     font-weight: 800;
     font-size: 24px;
     line-height: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .header a:hover[data-v-0c67992c] {
-    color: var(--bgheader);
     -webkit-text-shadow: 4px 4px 4px #fff;
     -moz-text-shadow: 4px 4px 4px #fff;
         text-shadow: 0px 0px 5px #fff;
 }
 
-@media only screen and (max-width: 445px) {
+.header a.non:hover[data-v-0c67992c] {
+    -webkit-text-shadow: 0px 0px 0px rgba(255, 255, 255, 0);;
+    -moz-text-shadow: 0px 0px 0px rgba(255, 255, 255, 0);;
+        text-shadow: 0px 0px 0px rgba(255, 255, 255, 0);;
+}
+
+.header div.logo a:hover[data-v-0c67993c] {
+    -webkit-text-shadow: 4px 4px 4px #fff;
+    -moz-text-shadow: 4px 4px 4px #fff;
+        text-shadow: 0px 0px 2px #fff;
+}
+
+@media screen and (max-width: 465px) {
     .header a[data-v-0c67992c] {
         color: #fff;
         text-align: right;
@@ -64,9 +87,20 @@
         -webkit-transition: all 0.5s ease;
                 transition: all 0.5s ease;
     }
+
+    .header a.non[data-v-0c67992c] {
+        color: #fff;
+        text-align: right;
+        text-decoration: none;
+        padding: 5px 16px;
+        float: right;
+        font-weight: 600;
+        -webkit-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+    }
 }
 
-@media only screen and (max-width: 405px) {
+@media screen and (max-width: 421px) {
     .header a[data-v-0c67992c] {
         color: #fff;
         text-align: right;
@@ -74,6 +108,19 @@
         padding: 0px 16px;
         float: right;
         font-weight: 300;
+        font-size: 13px;
+        line-height: 1;
+        -webkit-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+    }
+
+    .header a.non[data-v-0c67992c] {
+        color: #fff;
+        text-align: right;
+        text-decoration: none;
+        padding: 0px 16px;
+        float: right;
+        font-weight: 500;
         font-size: 13px;
         line-height: 1;
         -webkit-transition: all 0.5s ease;

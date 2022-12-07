@@ -11,13 +11,18 @@
 :root {
     --bgtheme: #3241ce;
     --bgheader: #4254F4;
+    --bgrecent: #e0e0e0;
+    --textPrimary: #333333;
+    --shadows: #999;
 }
 
 :root[data-theme='dark']{
     --bgtheme: #0a1420;
     --bgheader: #0a1420;
+    --bgrecent: #0d1c2b;
+    --textPrimary: #f5f7f7;
+    --shadows: rgba(128, 128, 128, 0.4);
 }
-
 
 body {
   background-color: var(--bgtheme);
@@ -298,41 +303,6 @@ nav li.twitch a[data-v-082a7a6a] {
 .fade-transition-enter[data-v-556a942f],
 .fade-transition-leave-to[data-v-556a942f] {
     opacity: 0
-}
-
-.past-game.home .card[data-v-556a942f] {
-    box-shadow: 0 0 12px 0 #999
-}
-
-.past-game.home .card[data-v-556a942f]:hover {
-    box-shadow: 0 5px 12px 0 #999
-}
-
-.past-game.managing .new[data-v-556a942f],
-.past-game.managing .items[data-v-556a942f],
-.past-game.managing .cta[data-v-556a942f] {
-    opacity: 0
-}
-
-.past-game.managing .name[data-v-556a942f] {
-    color: #cf2929
-}
-
-.past-game.managing.confirming .card[data-v-556a942f] {
-    background: #cf2929;
-    border-color: #cf2929
-}
-
-.past-game.managing.confirming .name[data-v-556a942f] {
-    color: #e0e0e0
-}
-
-.past-game.managing.confirming .date[data-v-556a942f] {
-    color: #e0e0e0
-}
-
-.past-game.managing.confirming .date span[data-v-556a942f] {
-    color: #e0e0e0
 }
 
 .jbg[data-v-8691596e] {
