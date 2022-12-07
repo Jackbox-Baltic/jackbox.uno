@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-US" class="no-js">
+<html lang="en-US">
 
 <head>
     <meta charset="utf-8">
@@ -69,10 +69,10 @@
           <a data-v-082a7a6a="" href="https://discord.gg/TNK3wsHHUW" target="_blank">DISCORD SERVER<div data-v-082a7a6a="" id="indicator" class="indicator"></div></a>
         </li>
         <li data-v-082a7a6a="">
-          <a data-v-082a7a6a="" id="tct" onclick="ladtheme()">ON DARK THEME</a>
+          <a data-v-082a7a6a="" id="tct" class="toggle-theme">ON DARK THEME</a>
         </li>
         <li data-v-082a7a6a="" class="version">
-          <a data-v-1e5a97d3="">Site: 221207</a>
+          <a data-v-1e5a97d3="">Site: 221207-2</a>
         </li>
         <!--
         <li data-v-082a7a6a="">
@@ -129,74 +129,6 @@
       <div data-v-e6c8e964="" class="actions"><button data-v-e6c8e964="" onclick="location.href='https://jackbox.tv'">ОК</button></div>
     </div>
   </div>
-  <script>
-    let popupBg = document.querySelector('.modal');
-    let popup = document.querySelector('.content');
-    let openPopupButtons = document.querySelectorAll('.open-popup');
-    let closePopupButton = document.querySelector('.actions');
-
-    let popupBgee = document.querySelector('.modalee');
-    let popupee = document.querySelector('.contentee');
-    let openPopupButtonsee = document.querySelectorAll('.open-popupee');
-    let closePopupButtonee = document.querySelector('.actions');
-    
-    openPopupButtons.forEach((button) => {
-        button.addEventListener('click', (e) => {
-            e.preventDefault();
-            popupBg.classList.add('active');
-            popup.classList.add('active');
-        })
-    });
-
-    closePopupButton.addEventListener('click',() => {
-        popupBg.classList.remove('active');
-        popup.classList.remove('active');
-    });
-
-    openPopupButtonsee.forEach((button) => {
-        button.addEventListener('click', (e) => {
-            e.preventDefault();
-            popupBgee.classList.add('active');
-            popupee.classList.add('active');
-        })
-    });
-
-    closePopupButtonee.addEventListener('click',() => {
-        popupBgee.classList.remove('active');
-        popupee.classList.remove('active');
-    });
-
-    document.addEventListener('click', (e) => {
-        if(e.target === popupBg) {
-            popupBg.classList.remove('active');
-            popup.classList.remove('active');
-        }
-    });
-
-    document.addEventListener('click', (e) => {
-        if(e.target === popupBgee) {
-            popupBgee.classList.remove('active');
-            popupee.classList.remove('active');
-        }
-    });
-
-    function ladtheme() {
-      var element = document.body;
-      element.classList.toggle("dark-theme");
-
-      var x = document.getElementById("tct");
-      if (x.innerHTML === "ON DARK THEME") {
-        x.innerHTML = "ON LIGHT THEME";
-      } else {
-        x.innerHTML = "ON DARK THEME";
-      }
-
-      var indicator = document.getElementById("indicator");
-      indicator.classList.toggle("indicator-dark-theme");
-
-      var header = document.getElementById("header");
-      header.classList.toggle("header-dark-theme");
-    }
-  </script>
+  <script src="app.js"></script>
 </body>
 </html>

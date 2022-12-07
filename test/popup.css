@@ -188,5 +188,7 @@ button {
     border-image: initial;
 }
 
-
-
+/* [data-v-a0fd2f6c] {
+    -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+}
