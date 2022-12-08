@@ -1,5 +1,7 @@
-var element = document.getElementById("sv");
-element.innerHTML = "Site: 221208-2";
+function  siteversion() {
+	var element = document.getElementById("sv");
+	element.innerHTML = "Site: 221208-3";
+}
 
 function ladtheme() {
 	const toggleTheme = document.querySelector('.toggle-theme')
@@ -30,3 +32,4 @@ function ladtheme() {
 }
 
 ladtheme()
+siteversion()
