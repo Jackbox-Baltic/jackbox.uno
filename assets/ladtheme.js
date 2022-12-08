@@ -1,3 +1,6 @@
+var element = document.getElementById("sv");
+element.innerHTML = "Site: 221208-2";
+
 function ladtheme() {
 	const toggleTheme = document.querySelector('.toggle-theme')
 	console.log('Found!')

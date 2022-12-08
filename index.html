@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-US" class="no-js">
 
-<head>
+<head class="toggle-theme">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Jackbox.UNO</title>
@@ -25,7 +25,7 @@
     <link href="/assets/css/popup.css" rel="stylesheet">
     <link href="/assets/css/testrecent.css" rel="stylesheet">
 </head>
-<body id="theme" class="theme LIGHT-theme">
+<body>
   <div data-v-8691596e="" data-v-2ba6adc4="" class="top-bar">
     <nav data-v-082a7a6a="" data-v-8691596e="" class="nav screen">
       <ul data-v-082a7a6a="">
@@ -34,7 +34,7 @@
           <a data-v-1e5a97d3="" href="https://jackbox.tv/manifest">App: 5.55.0</a>
         </li>-->
         <li data-v-082a7a6a="" class="version">
-          <a data-v-1e5a97d3="" >Site: 221208</a>
+          <a data-v-1e5a97d3="" id="sv"></a>
         </li>
         <!--<li data-v-082a7a6a="" class="twitch">
           <a data-v-082a7a6a="" href="http://help.jackboxgames.com" target="_blank">ESTONIAN</a>
@@ -117,7 +117,7 @@
       <div data-v-e6c8e964="" class="actions"><button data-v-e6c8e964="" onclick="location.href='https://jackbox.tv'">ОК</button></div>
     </div>
   </div>
-  <script>
+  <!--<script>
     let popupBg = document.querySelector('.modal');
     let popup = document.querySelector('.content');
     let openPopupButtons = document.querySelectorAll('.open-popup');
@@ -189,6 +189,7 @@
 
       button.innerHTML == 'ON DARK THEME' ? button.innerHTML = 'ON LIGHT THEME' : button.innerHTML = 'ON DARK THEME';
     });*/
-  </script>
+  </script>-->
+  <script src="/assets/ladtheme.js"></script>
 </body>
 </html>

@@ -1,33 +1,3 @@
-html, body {
-    border: 0;
-    font-family: "Helvetica-Neue","Helvetica",Arial,sans-serif;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-}
-
-div, span, object, iframe, img, table, caption, thead, tbody, tfoot, tr, tr, td, article, aside, canvas, details, figure, hgroup, menu, nav, footer, header, section, summary, mark, audio, video {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, ins, q, samp, small, strong, sub, sup, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, legend, label {
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    margin: 0;
-    padding: 0;
-}
-
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-div {
-    display: block;
-}
-
 .jbg[data-v-2ba6adc4] {
     background: #fff;
     font-family: Helvetica,Arial,sans-serif;
@@ -42,18 +12,15 @@ div {
     box-shadow: inset 0 10px 10px -16px #aaa;
 }
 
-.constrain {
-    position: relative;
+.constrain[data-v-2ba6adc4] {
     width: 100%;
     min-height: 100%;
     min-width: 320px;
-    max-width: 450px;
-    margin: 0 auto;
 }
 
 .recent .top-items[data-v-2ba6adc4] {
     margin: 0 auto 12px;
-    max-width: 375px;
+    text-align: center;
 }
 
 .recent h3[data-v-2ba6adc4] {
@@ -124,9 +91,12 @@ button {
 
 .past-game[data-v-556a942f] {
     position: relative;
+    display: inline-block;
     margin: 0 auto 20px;
+    min-width: 375px;
     max-width: 375px;
     transform: translateZ(0);
+    padding: 0px 16px;
 }
 
 .past-game.home .card[data-v-556a942f] {
@@ -338,6 +308,7 @@ svg:not(:root) {
 }
 
 .name[data-v-556a942f] {
+    text-align: left;
     float: left;
     width: 75%;
     padding-top: 3px;
@@ -394,4 +365,8 @@ svg:not(:root) {
     display: block;
     font-size: 14px;
     text-align: center;
+}
+
+.centerpls {
+  text-align: center;
 }
