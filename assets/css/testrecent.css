@@ -25,8 +25,9 @@
 
 .recent h3[data-v-2ba6adc4] {
     display: inline-block;
-    font-size: 14px;
+    font-size: 24px;
     text-align: left;
+    text-align: center;
 }
 
 h3 {
@@ -97,6 +98,8 @@ button {
     max-width: 375px;
     transform: translateZ(0);
     padding: 0px 16px;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
 }
 
 .past-game.home .card[data-v-556a942f] {
@@ -181,6 +184,30 @@ a:-webkit-any-link {
 
 .image.tjpp[data-v-556a942f] {
   background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2019/07/PP1_tile.jpg");
+}
+.image.tjpp2[data-v-556a942f] {
+  background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2019/07/PP2_tile.jpg");
+}
+.image.tjpp3[data-v-556a942f] {
+  background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2019/07/PP3_tile.jpg");
+}
+.image.tjpp4[data-v-556a942f] {
+  background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2019/07/PP4_tile.jpg");
+}
+.image.tjpp5[data-v-556a942f] {
+  background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2019/07/PP5_tile.jpg");
+}
+.image.tjpp6[data-v-556a942f] {
+  background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2019/09/WebsiteTile-2.jpg");
+}
+.image.tjpp7[data-v-556a942f] {
+  background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2020/09/website-title-1.jpg");
+}
+.image.tjpp8[data-v-556a942f] {
+  background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2021/09/PP8_Nintendo_FirstLook-1Artboard-1.jpg");
+}
+.image.tjps[data-v-556a942f] {
+  background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2022/04/JBPS_635x291px.jpg");
 }
 .image.tjpp9[data-v-556a942f] {
   background-image: url("https://jackboxgames.b-cdn.net/wp-content/uploads/2022/08/pp9temptile.jpg");
@@ -369,4 +396,46 @@ svg:not(:root) {
 
 .centerpls {
   text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .past-game[data-v-556a942f] {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto 20px;
+    min-width: 275px;
+    max-width: 275px;
+    transform: translateZ(0);
+    padding: 0px 16px;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+.name[data-v-556a942f] {
+  text-align: left;
+  float: left;
+  width: 75%;
+  padding-top: 0px;
+  color: #0e167d;
+  font-size: 10px;
+  text-transform: uppercase;
+  transition: color .1s;
+  line-height: 1.3;
+}
+
+.date[data-v-556a942f] {
+  float: right;
+  width: 25%;
+  color: #000;
+  font-size: 8px;
+  line-height: 1.2;
+  text-align: right;
+}
+
+.date span[data-v-556a942f] {
+  display: block;
+  color: #333;
+  font-size: 6px;
+}
+
 }

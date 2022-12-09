@@ -173,7 +173,7 @@ body {
 }
 
 .nav a.ee[data-v-082a7a6a]::before {
-  content: "ESTONIAN";
+  content: "EESTI";
 }
 
 .nav a.ee[data-v-082a7a6a]:hover::before {
@@ -181,7 +181,7 @@ body {
 }
 
 .nav a.lv[data-v-082a7a6a]::before {
-  content: "LATVIAN";
+  content: "LATVIEŠU";
 }
 
 .nav a.lv[data-v-082a7a6a]:hover::before {
@@ -189,7 +189,7 @@ body {
 }
 
 .nav a.lt[data-v-082a7a6a]::before {
-  content: "LITHUANIAN";
+  content: "LIETUVIŲ";
 }
 
 .nav a.lt[data-v-082a7a6a]:hover::before {
