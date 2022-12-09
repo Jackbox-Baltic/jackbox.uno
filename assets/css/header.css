@@ -4,7 +4,7 @@
     left: 0;
     height: 50px;
     width: 100%;
-    padding: 12px 15px;
+    padding: 12px 16px;
     background: var(--bgheader);
     user-select: none;
     color: #fff;
@@ -14,20 +14,21 @@
 }
 
 .constrain[data-v-0c67992c] {
+    display: table;
+    align-items:center;
     overflow: hidden;
     width: 100%;
     min-height: 100%;
-    min-width: 320px;
-    max-width: 850px;
+
     margin: 0 auto;
     height: 28px;
 }
 
 .header a[data-v-0c67992c] {
-    color: rgba(255, 255, 255, 0.966);
+    color: #fff;
     text-align: right;
     text-decoration: none;
-    padding: 0px 16px;
+    padding: 0px 10px;
     float: right;
     font-weight: 600;
     -webkit-transition: all 0.5s ease;
@@ -38,7 +39,7 @@
     color: #fff;
     text-align: right;
     text-decoration: none;
-    padding: 0px 16px;
+    padding: 0px 10px;
     float: right;
     font-weight: 800;
     -webkit-transition: all 0.5s ease;
@@ -56,6 +57,12 @@
     line-height: 1;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
+}
+
+.header div.logo a[data-v-0c67993c]::before {
+    content: "jackbox baltic";
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
 }
 
 .header a:hover[data-v-0c67992c] {
@@ -76,38 +83,33 @@
         text-shadow: 0px 0px 2px #fff;
 }
 
-@media screen and (max-width: 465px) {
-    .header a[data-v-0c67992c] {
-        color: #fff;
-        text-align: right;
-        text-decoration: none;
-        padding: 5px 16px;
-        float: right;
-        font-weight: 300;
-        font-size: 13px;
-        line-height: 1;
+@media screen and (max-width: 505px) {
+    .header div.logo a[data-v-0c67993c]::before {
+        content: "";
+        padding-left: 16px;
         -webkit-transition: all 0.5s ease;
                 transition: all 0.5s ease;
     }
 
-    .header a.non[data-v-0c67992c] {
-        color: #fff;
-        text-align: right;
-        text-decoration: none;
-        padding: 5px 16px;
-        float: right;
-        font-weight: 600;
+    .header div.logo a[data-v-0c67993c] {
+        width: 13%;
+        height: 28px;
+        padding-left: 16px;
+        background-image: url(/assets/logo.png);
+        background-size: contain;
+        background-position: left;
+        background-repeat: no-repeat;
         -webkit-transition: all 0.5s ease;
                 transition: all 0.5s ease;
     }
 }
 
-@media screen and (max-width: 421px) {
+/*@media screen and (max-width: 429px) {
     .header a[data-v-0c67992c] {
         color: #fff;
         text-align: right;
         text-decoration: none;
-        padding: 0px 16px;
+        padding: 5px 10px;
         float: right;
         font-weight: 300;
         font-size: 13px;
@@ -120,7 +122,7 @@
         color: #fff;
         text-align: right;
         text-decoration: none;
-        padding: 0px 16px;
+        padding: 5px 10px;
         float: right;
         font-weight: 500;
         font-size: 13px;
@@ -128,4 +130,4 @@
         -webkit-transition: all 0.5s ease;
                 transition: all 0.5s ease;
     }
-}
+}*/

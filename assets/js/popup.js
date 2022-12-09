@@ -22,10 +22,3 @@ document.addEventListener('click', (e) => {
 		popup.classList.remove('active');
 	}
 });
-
-document.addEventListener('click', (e) => {
-	if (e.target === popupBgee) {
-		popupBgee.classList.remove('active');
-		popupee.classList.remove('active');
-	}
-});
