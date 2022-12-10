@@ -2,14 +2,7 @@
     background: #fff;
     padding-bottom: 30px;
 }
-div, span, object, iframe, img, table, caption, thead, tbody, tfoot, tr, tr, td, article, aside, canvas, details, figure, hgroup, menu, nav, footer, header, section, summary, mark, audio, video {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-div {
-    display: block;
-}
+
 .jbg.sign-in.has-recent[data-v-2ba6adc4] {
     background: #e0e0e0;
 }
@@ -18,6 +11,7 @@ div {
     height: 100%;
     overflow-y: scroll;
 }
+
 .jbg[data-v-2ba6adc4] {
     background: #fff;
     font-family: Helvetica,Arial,sans-serif;
@@ -25,23 +19,7 @@ div {
     font-weight: bold;
     color: #333;
 }
-.jbg[data-v-2ba6adc4] {
-    background: #fff;
-    font-family: Helvetica,Arial,sans-serif;
-    font-size: 10px;
-    font-weight: bold;
-    color: #333;
-}
-html, body {
-    border: 0;
-    font-family: "Helvetica-Neue","Helvetica",Arial,sans-serif;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-}
-*, *::before, *::after {
-    box-sizing: border-box;
-}
+
 .constrain {
     position: relative;
     width: 100%;
@@ -50,21 +28,17 @@ html, body {
     max-width: 450px;
     margin: 0 auto;
 }
+
 .jbg form[data-v-2ba6adc4] {
     margin: 0px auto 5px;
     padding: 70px 15px 0px 15px;
 }
+
 form {
     display: block;
     margin-top: 0em;
 }
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, ins, q, samp, small, strong, sub, sup, b, i, hr, dl, dt, dd, ol, ul, li, fieldset, legend, label {
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    margin: 0;
-    padding: 0;
-}
+
 fieldset {
     display: block;
     margin-inline-start: 2px;
@@ -79,6 +53,7 @@ fieldset {
     border-color: rgb(192, 192, 192);
     border-image: initial;
 }
+
 .jbg label[data-v-2ba6adc4] {
     display: inline-block;
     width: 100%;
@@ -87,12 +62,14 @@ fieldset {
     color: #333;
     font-size: 17px;
 }
+
 label .status[data-v-2ba6adc4] {
     float: right;
     font-size: 14px;
     font-weight: normal;
     font-style: italic;
 }
+
 .jbg input[data-v-2ba6adc4], .jbg textarea[data-v-2ba6adc4] {
     width: 100%;
     height: 34px;
@@ -106,9 +83,11 @@ label .status[data-v-2ba6adc4] {
     font-weight: bold;
     text-transform: uppercase;
 }
+
 input[type="text" i] {
     padding: 1px 2px;
 }
+
 input {
     writing-mode: horizontal-tb !important;
     text-rendering: auto;
@@ -132,6 +111,7 @@ input {
     border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-image: initial;
 }
+
 .jbg label[data-v-2ba6adc4] {
     display: inline-block;
     width: 100%;
@@ -140,17 +120,21 @@ input {
     color: #333;
     font-size: 17px;
 }
+
 label {
     cursor: default;
 }
+
 label .remaining[data-v-2ba6adc4] {
     float: right;
 }
+
 .jbg button[data-v-2ba6adc4]:disabled {
     background: #e0e0e0;
     color: #505050;
     box-shadow: 0 0 0 0 #505050;
 }
+
 .jbg button[data-v-2ba6adc4] {
     cursor: pointer;
     height: 48px;
@@ -166,11 +150,13 @@ label .remaining[data-v-2ba6adc4] {
     box-shadow: 0 5px 0 0 #0e167d;
     transition: color .5s,background-position .5s,box-shadow .5s;
 }
+
 button:disabled {
     background-color: -internal-light-dark(rgba(239, 239, 239, 0.3), rgba(19, 1, 1, 0.3));
     color: -internal-light-dark(rgba(16, 16, 16, 0.3), rgba(255, 255, 255, 0.3));
     border-color: -internal-light-dark(rgba(118, 118, 118, 0.3), rgba(195, 195, 195, 0.3));
 }
+
 button {
     appearance: auto;
     writing-mode: horizontal-tb !important;
@@ -193,10 +179,12 @@ button {
     border-color: buttonborder;
     border-image: initial;
 }
+
 .tos[data-v-2ba6adc4] {
     font-size: 12px;
     text-align: center;
 }
+
 p {
     display: block;
     margin-block-start: 1em;

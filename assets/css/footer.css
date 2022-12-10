@@ -1,4 +1,7 @@
 .footer[data-v-082a7a6a] {
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
     padding: 0px 16px;
     background: var(--bgtheme);
