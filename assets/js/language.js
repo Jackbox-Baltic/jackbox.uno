@@ -1,7 +1,8 @@
 // https://qna.habr.com/q/1001843
+
 const langArr = {
   en: {
-    ds: 'DISCORD SERVER<div data-v-082a7a6a="" class="indicator"></div>',
+    ds: 'DISCORD SERVER',
     test: 'Text',
     modaloops: 'Oops...',
     toggleladon: 'TURN ON DARK THEME',
@@ -18,8 +19,8 @@ const langArr = {
     tjppd: 'Long gone are quiet nights in watching the same old TV shows – The Jackbox Party Pack is here! Experience five fun games in one great pack – giving you the perfect excuse for rounding up friends, family and fellow gamers for a few hours of gaming delight – whatever the day, whatever the occasion. You’re gonna need more than one party for this.',
     download: 'Download translation',
     downloadrn: 'Download translation right now!',
-    statust: 'Translated!',
-    statusdnt: 'Don\'t Translated!',
+    statust: 'Translated',
+    statusdnt: 'Not translated',
     statusip: 'In process',
     ydkj2015: 'You Don\'t Know Jack 2015',
     ydkj2015d: 'The smart-ass trivia show that started it all! Hundreds of all-new twisted trivia questions and everyone’s favorite host!',
@@ -31,11 +32,12 @@ const langArr = {
     lieswatterd: 'Need a game for a big group? Grab yourself or a crowd and play true-or-false with a timer.',
     fibbagexl: 'Fibbage XL',
     fibbagexld: 'The hilarious bluffing game now has 50% more questions added to the original hit game, Fibbage.',
+    screenblocker: 'Unfortunately, this screen scale isn\'t supported!',
 
   },
 
   ee: {
-    ds: 'DISCORDI SERVER<div data-v-082a7a6a="" class="indicator"></div>',
+    ds: 'DISCORDI SERVER',
     test: 'Tekst',
     modaloops: 'Ups...',
     toggleladon: 'TUME REŽIIM',
@@ -52,7 +54,7 @@ const langArr = {
   },
 
   lv: {
-    ds: 'DISCORD SERVERIS<div data-v-082a7a6a="" class="indicator"></div>',
+    ds: 'DISCORD SERVERIS',
     test: 'Teksts',
     modaloops: 'Ūps...',
     toggleladon: 'IESLĒGT TUMŠO TĒMU',
@@ -66,26 +68,17 @@ const langArr = {
     titlefaq: 'BUJ',
     titlenews: 'Jaunumi',
     titlegames: 'Spēlēs',
-    tjppd: '',
     download: 'Lejupielādēt tulkojumu',
     downloadrn: 'Lejupielādēt tulkojumu tūlīt!',
-    statust: 'Tulkots!',
-    statusdnt: 'Nav tulkots!',
+    statust: 'Tulkots',
+    statusdnt: 'Nav tulkots',
     statusip: 'Procesā',
-    ydkj2015: 'You Don\'t Know Jack 2015',
-    ydkj2015d: '',
     drawful: 'Zīmurgs',
-    drawfuld: '',
-    wordspud: '',
-    wordspudd: '',
-    lieswatter: '',
-    lieswatterd: '',
-    fibbagexl: '',
-    fibbagexld: '',
+    screenblocker: 'Diemžēl šī ekrāna skala netiek atbalstīta!',
   },
 
   lt: {
-    ds: 'DISCORDO SERVERIS<div data-v-082a7a6a="" class="indicator"></div>',
+    ds: 'DISCORDO SERVERIS',
     test: 'Tekstas',
     modaloops: 'Ups...',
     toggleladon: 'TAMSUSIS REŽIMAS',
@@ -99,9 +92,9 @@ const langArr = {
     titlefaq: 'DUK',
     titlenews: 'Naujienos',
     titlegames: 'Žaidimai',
-},
+  },
 };
-  
+
 const langEn = document.querySelector('#lang-en');
 const langEe = document.querySelector('#lang-ee');
 const langLv = document.querySelector('#lang-lv');
@@ -116,12 +109,14 @@ function setLang(lang) {
   if (!langArr.hasOwnProperty(lang)) return;
   if (window.hasOwnProperty('localStorage'))
     window.localStorage.setItem('lang', lang);
-  for (let key in langArr[lang]) {
-    let elem = document.querySelector('.lang-' + key);
-    if (elem) {
-      elem.innerHTML = langArr[lang][key];
+    for (let key in langArr[lang]) {
+      let elem = document.querySelector('.lang-' + key);
+      if (elem) {
+        elem.textContent = langArr[lang][key];
+      }
     }
-  }
 }
 var lang = (window.hasOwnProperty('localStorage') && window.localStorage.getItem('lang', lang)) || 'en';
 setLang(lang);
+
+// https://www.youtube.com/watch?v=Yh-9PrbzZAY

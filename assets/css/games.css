@@ -13,14 +13,14 @@
 .recent[data-v-2ba6adc4] {
     padding: 30px 15px;
     background: var(--bgrecent);
-    box-shadow: inset 0 10px 10px -16px var(--boxshadow);
-    margin-top: -20px;
+    margin-top: -10px;
     padding-bottom: 50px;
     border-radius: 20px;
-    box-shadow: 0px 4px 24px rgb(0 0 0 / 25%);
+    /*box-shadow: 0px 4px 24px rgb(0 0 0 / 25%);*/
     position: absolute;
     z-index: 0;
     width: 100%;
+    box-shadow: 0 0 0 10px var(--bgtheme);
 }
 
 .constrain[data-v-2ba6adc4] {
@@ -43,13 +43,13 @@ h1 {
 }
 
 .block-bg[data-v-2ba6adc4] {
-    background-color: #f1f1f1;
+    background-color: #fff;
     width: 100%;
     height: auto;
     margin: 3% 0% 0% 0%;
     padding: 1% 1% 1% 1%;
     /*box-shadow: 0px 4px 10px 0px rgb(0 0 0 / 50%);*/
-    border: 4px solid var(--liborder);
+    /*border: 4px solid var(--liborder);*/
     border-radius: 14px;
     box-shadow: 0 10px 0 0 var(--bgtheme);
 }
@@ -152,6 +152,8 @@ li[data-v-082a7a6a] {
     animation-name: fade-animation-data-v-082a7a6a;
     user-select: none;
     color: #000;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 li[data-v-082a7a6a] a {
@@ -177,8 +179,8 @@ li[data-v-082a7a6a] a {
     position: relative;
     display: inline-block;
     margin: 0 auto 20px;
-    min-width: 675px;
-    max-width: 675px;
+    min-width: 610px;
+    max-width: 610px;
     transform: translateZ(0);
     padding: 0px 16px;
     -webkit-transition: all 0.5s ease;
@@ -320,7 +322,11 @@ li[data-v-082a7a6a] a {
     user-select: none;
 }
 
-@media screen and (max-width: 830px) {
+li[data-v-082a7a6a] .lang-downloadrn {
+    font-size: 22px;
+}
+
+@media screen and (max-width: 900px) {
     li[data-v-082a7a6a] {
         animation: fade-animation-data-v-082a7a6a .5s forwards;
         animation-duration: 0.5s;
@@ -335,16 +341,16 @@ li[data-v-082a7a6a] a {
         color: #000;
         text-align: right;
     }
-}
 
-@media screen and (max-width: 730px) {
     .game_background img {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 20%;
+        padding-right: 20%;
         width: 100%;
         margin: 0 auto;
     }
+}
 
+@media screen and (max-width: 730px) {
     .block-bg h1[data-v-2ba6adc4] {
         display: block;
         font-size: 26px;
@@ -435,9 +441,20 @@ li[data-v-082a7a6a] a {
         text-align: left;
         padding: 2px 0px;
     }
+
+    li[data-v-082a7a6a] .lang-downloadrn {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 620px) {
+    .game_background img {
+        padding-left: 10%;
+        padding-right: 10%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
     .past-game[data-v-556a942f] {
         position: relative;
         display: inline-block;
@@ -489,6 +506,8 @@ li[data-v-082a7a6a] a {
         font-size: 22px;
         color: #000;
         text-align: center;
+        line-height: 1;
+        padding-top: 10px;
     }
     
     .block-bg p[data-v-2ba6adc4] {
@@ -565,4 +584,33 @@ li[data-v-082a7a6a] a {
         text-align: left;
         padding: 2px 0px;
     }
+
+    li[data-v-082a7a6a] .lang-downloadrn {
+        font-size: 14px;
+    }
 }
+
+@media screen and (max-width: 400px) {
+    .block-bg h1[data-v-2ba6adc4] {
+        display: block;
+        font-size: 22px;
+        color: #000;
+        text-align: center;
+        line-height: 1;
+        padding-top: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .past-game[data-v-556a942f] {
+        position: relative;
+        display: inline-block;
+        margin: 0 auto 20px;
+        min-width: 325px;
+        max-width: 325px;
+        transform: translateZ(0);
+        padding: 0px 16px;
+        -webkit-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+    }
+  }
