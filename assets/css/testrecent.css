@@ -5,6 +5,7 @@
     --namept: 3px;
     --namefs: 14px;
     --pastgamewidth: 375px;
+    --pfs: 24px;
 }
 
 .jbg[data-v-2ba6adc4] {
@@ -290,6 +291,13 @@ svg:not(:root) {
   user-select: none;
 }
 
+p[data-v-2ba6adc5] {
+    font-size: var(--pfs);
+    padding: 0px 20px 0px 20px;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
 @media screen and (max-width: 400px) {
     :root {
         --h3fs: 17px;
@@ -298,5 +306,6 @@ svg:not(:root) {
         --namept: 0px;
         --namefs: 10px;
         --pastgamewidth: 275px;
+        --pfs: 20px;
     }
 }

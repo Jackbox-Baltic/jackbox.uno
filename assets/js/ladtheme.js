@@ -13,7 +13,7 @@ function ladtheme() {
 			//x.classList.remove("lang-toggleladoff");
 			//x.classList.add("lang-toggleladon");
 			x.innerHTML = '🌛';
-			console.log('🌛');
+			console.log('🌞');
 			localStorage.removeItem('theme');
             console.log('Item removed from local storage');
 		} else {
@@ -22,7 +22,7 @@ function ladtheme() {
 			//x.classList.remove("lang-toggleladon");
 			//x.classList.add("lang-toggleladoff");
 			x.innerHTML = '🌞';
-			console.log('🌞');
+			console.log('🌛');
 			localStorage.setItem('theme', 'dark');
 			console.log('Item added in local storage');
 		}

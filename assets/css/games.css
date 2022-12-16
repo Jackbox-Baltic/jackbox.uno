@@ -291,7 +291,7 @@ li[data-v-082a7a6a] a {
     float: right;
     width: 30%;
     color: #000;
-    font-size: 17px;
+    font-size: var(--fsdate);
     line-height: 1;
     text-align: right;
     padding: 2px 0px 4px 0px;
