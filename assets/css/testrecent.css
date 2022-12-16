@@ -293,7 +293,7 @@ svg:not(:root) {
 @media screen and (max-width: 400px) {
     :root {
         --h3fs: 17px;
-        --datefs: 12px;
+        --datefs: 8px;
         --datespanfs: 6px;
         --namept: 0px;
         --namefs: 10px;
