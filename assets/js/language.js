@@ -142,7 +142,7 @@ const gamesDataen= [
   }
 ];
 
-function petTemplate(text) {
+function games(text) {
   return `
     <div data-v-556a942f="" data-v-2ba6adc4="" class="past-game home">
     <a data-v-556a942f="" href="${text.href}" target="_blank" class="card">
@@ -160,7 +160,7 @@ function petTemplate(text) {
   `;
 }
 
-function petTemplatesad() {
+function gamessad() {
   return `
     <div class="">
       <p data-v-2ba6adc5="" class="lang-nttext">At the moment, we don't have a translation. But you can help join the translation team!</p>
@@ -177,7 +177,7 @@ function petTemplatesad() {
   `;
 }
 
-function petTemplateen() {
+function gamesen() {
   return `
     <style>
       .screenblockeren {
@@ -331,27 +331,27 @@ function setLang(lang) {
     }
     if(lang=='en') { 
       document.getElementById("games").innerHTML = `
-        ${gamesDataen.map(petTemplateen).join("")}
+        ${gamesDataen.map(gamesen).join("")}
       `;
     }
     if(lang=='ee') { 
       document.getElementById("games").innerHTML = `
-        ${gamesDataee.map(petTemplatesad).join("")}
+        ${gamesDataee.map(gamessad).join("")}
       `;
     }
     if(lang=='lv') { 
       document.getElementById("games").innerHTML = `
-        ${gamesDatalv.map(petTemplate).join("")}
+        ${gamesDatalv.map(games).join("")}
       `;
     }
     if(lang=='lt') { 
       document.getElementById("games").innerHTML = `
-        ${gamesDatalt.map(petTemplate).join("")}
+        ${gamesDatalt.map(games).join("")}
       `;
     }
     if(lang=='test') { 
       document.getElementById("games").innerHTML = `
-        ${gamesDatatest.map(petTemplate).join("")}
+        ${gamesDatatest.map(games).join("")}
       `;
     }
 }
