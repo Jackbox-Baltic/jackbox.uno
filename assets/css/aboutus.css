@@ -1,0 +1,205 @@
+:root {
+    --h0fs: 48px;
+    --h3fs: 32px;
+    --pfs: 20px;
+    --spanfs: 16px;
+}
+
+.jbg[data-v-2ba6adc5] {
+    background: #fff;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--textPrimary);
+}
+
+.recent[data-v-2ba6adc5] {
+    padding: 30px 8%;
+    background: var(--bgrecent);
+    box-shadow: inset 0 10px 10px -16px var(--boxshadow);
+}
+
+.constrain[data-v-2ba6adc5] {
+    width: 100%;
+    min-height: 100%;
+    min-width: 320px;
+}
+
+.recent .top-items[data-v-2ba6adc5] {
+    margin: 0 auto 12px;
+}
+
+.recent h1[data-v-2ba6adc5] {
+    font-size: var(--h3fs);
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+h1 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: var(--h0fs);
+    font-weight: bold;
+}
+
+p[data-v-2ba6adc5] {
+    font-size: var(--pfs);
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+p[data-v-2ba6adc5] strong {
+    font-weight: 700;
+}
+
+p[data-v-2ba6adc5] span {
+    font-size: var(--spanfs);
+    font-weight: 500;
+}
+
+.spacer {
+    height: 20px;
+}
+
+.splitter {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.splittblock {
+    flex-basis: 50%;
+    padding: 16px;
+}
+
+.lv[data-v-2ba6adc5]::before {
+    content: "Laipni lūgti!";
+    animation: welcome 15s ease 1;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+@keyframes welcome {
+    0% {
+        content: "W";
+    } 
+    3% {
+        content: "We";
+    }
+    6% {
+        content: "Wel";
+    }
+    9% {
+        content: "Welc";
+    }
+    12% {
+        content: "Welco";
+    }
+    15% {
+        content: "Welcom";
+    }
+    18% {
+        content: "Welcome";
+    }
+    21% {
+        content: "Welcome!";
+    }
+    45% {
+        content: "Welcome!";
+    } 
+    46% {
+        content: "Welcome";
+    } 
+    47% {
+        content: "Welcom";
+    }
+    48% {
+        content: "Welco";
+    }
+    49% {
+        content: "Welc";
+    }
+    50% {
+        content: "Wel";
+    }
+    51% {
+        content: "We";
+    }
+    52% {
+        content: "W";
+    }
+    53% {
+        content: "　";
+    }
+    58% {
+        content: "L";
+    }
+    61% {
+        content: "La";
+    }
+    64% {
+        content: "Lai";
+    }
+    67% {
+        content: "Laip";
+    }
+    70% {
+        content: "Laipn";
+    }
+    73% {
+        content: "Laipni";
+    }
+    76% {
+        content: "Laipni ";
+    }
+    79% {
+        content: "Laipni l";
+    }
+    82% {
+        content: "Laipni lū";
+    }
+    85% {
+        content: "Laipni lūg";
+    }
+    87% {
+        content: "Laipni lūgt";
+    }
+    90% {
+        content: "Laipni lūgti";
+    }
+    93% {
+        content: "Laipni lūgti!";
+    }
+    100% {
+        content: "Laipni lūgti!";
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .splittblock {
+        flex-basis: 100%;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 446px) {
+    :root {
+        --h0fs: 32px;
+        --h3fs: 24px;
+        --pfs: 16px;
+        --spanfs: 12px;
+    }
+}

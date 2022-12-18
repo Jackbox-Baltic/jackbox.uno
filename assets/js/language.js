@@ -207,6 +207,127 @@ function gamesen() {
   `;
 }
 
+const aboutusen= [
+  {
+    class: "class=\"ct\"",
+    welcome: "Welcome!",
+    jackboxbaltic: "<strong>Jackbox Baltic</strong> is the site where we upload unofficial Estonian, Latvian and Lithuanian translations for the games of Jackbox Games, known for being the creators of the Jackbox Party Pack. We are just starting our way into localisation of games, so you can help us by joining our team on the discord server!",
+    aboutjg: "About Jackbox Games",
+    aboutjgd: "<strong>Jackbox Games</strong> is a small game production studio from Chicago (Illinois). The most famous franchise - You Don't Know Jack - has been released since 1995, and even existed as a TV show. Being a part of Jellyvision, in 2013 the company separated and was named Jackbox Games. In addition to The Jackbox Party Pack franchise, a variety of games are released, for example - Quiplash, Fibbage, Trivia Murder Party.",
+    cons: "Contributors",
+    ttcons: "Text Translators",
+    tecons: "Technical Editor",
+    fwcons: "Font Worker",
+    gcons: "Graphics",
+    sthanks: "Special Thanks",
+    cont: "Contact",
+    contd: "If you have a question, a suggestion or just want to chat, the best way to get in touch is via:",
+    ds: "DISCORD SERVER",
+    from: "from",
+  }
+];
+
+const aboutusee= [
+  {
+    class: "class=\"ee ct\"",
+    welcome: "",
+    jackboxbaltic: "",
+    aboutjg: "",
+    aboutjgd: "",
+    cons: "",
+    ttcons: "",
+    tecons: "",
+    fwcons: "",
+    gcons: "",
+    sthanks: "",
+    cont: "",
+    contd: "",
+    ds: "DISCORDI SERVER",
+    from: "",
+  }
+];
+
+const aboutuslv= [
+  {
+    class: "class=\"lv ct\"",
+    welcome: "",
+    jackboxbaltic: "<strong>Jackbox Baltic</strong> ir vietne, kurā mēs augšupielādējam neoficiālus tulkojumus igauņu, latviešu un lietuviešu valodās Jackbox Games spēlēm (kas ir pazīstami kā Jackbox Party Pack radītāji). Mēs tikai sākam savu ceļu spēļu lokalizācijā, tāpēc tu vari mums palīdzēt, pievienojoties mūsu komandai Discord serverī!",
+    aboutjg: "Par Jackbox Games",
+    aboutjgd: "",
+    cons: "",
+    ttcons: "",
+    tecons: "",
+    fwcons: "",
+    gcons: "",
+    sthanks: "",
+    cont: "",
+    contd: "",
+    ds: "DISCORD SERVERIS",
+    from: "no",
+  }
+];
+
+const aboutuslt= [
+  {
+    class: "class=\"lt ct\"",
+    welcome: "",
+    jackboxbaltic: "",
+    aboutjg: "",
+    aboutjgd: "",
+    cons: "",
+    ttcons: "",
+    tecons: "",
+    fwcons: "",
+    gcons: "",
+    sthanks: "",
+    cont: "",
+    contd: "",
+    ds: "DISCORDO SERVERIS",
+    from: "",
+  }
+];
+
+function aboutus(text) {
+  return `
+  <div data-v-2ba6adc5="" class="recent">
+    <div data-v-2ba6adc5="" class="constrain">
+      <div data-v-2ba6adc5="" class="top-items">
+        <h2 data-v-2ba6adc5="" ${text.class}>${text.welcome}</h2>
+        <p data-v-2ba6adc5="">${text.jackboxbaltic}</p>
+        <div class="spacer"></div>
+        <div class="splitter">
+          <div class="splittblock">
+            <h1 data-v-2ba6adc5="" class="rt">${text.aboutjg}</h1>
+            <p data-v-2ba6adc5="" class="rt">${text.aboutjgd}</p>
+          </div>
+          <div class="spacer"></div>
+          <div class="splittblock">
+            <h1 data-v-2ba6adc5="">${text.cons}</h1>
+            <p data-v-2ba6adc5=""><strong>${text.ttcons}</strong>: Alacris <span>(eesti)</span>, Dejelnieks <span>(latviešu)</span>, Vvv <span>(lietuvių)</span></p>
+            <p data-v-2ba6adc5=""><strong>${text.tecons}</strong>: Dejelnieks <span>(eesti, latviešu, lietuvių)</span></p>
+            <p data-v-2ba6adc5=""><strong>${text.fwcons}</strong>: Dejelnieks <span>(eesti, latviešu, lietuvių)</span></p></p>
+            <p data-v-2ba6adc5=""><strong>${text.gcons}</strong>: Trstnlkr2582 .D <span>(from Jackbox en español)</span></p>
+            <p data-v-2ba6adc5=""><strong>${text.sthanks}</strong>: Trstnlkr2582 .D, Akira896 <span>(${text.from} Jackbox en español)</span>, Erizzle <span>(${text.from} Jackbox Translations DE)</p>
+          </div>
+        </div>
+        <div class="spacer"></div>
+        <h1 data-v-2ba6adc5="" class="ct">${text.cont}</h1>
+        <p data-v-2ba6adc5="" class="ct">${text.contd}</p>
+        <div data-v-8691596e="" data-v-2ba6adc4="">
+          <nav data-v-082a7a6a="" class="nav screen">
+            <ul data-v-082a7a6a="" id="clang">
+              <li data-v-082a7a6a="">
+                <a data-v-082a7a6a="" href="https://discord.gg/TNK3wsHHUW" target="_blank" class="lang-ds">${text.ds}<div data-v-082a7a6a="" style="border: 3px solid var(--bgrecent);" class="indicator"></div></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  `;
+}
+
 /*document.getElementById("games").innerHTML = `
   ${gamesenData.map(petTemplate).join("")}
 `;*/
@@ -247,6 +368,8 @@ const langArr = {
     fibbagexld: 'The hilarious bluffing game now has 50% more questions added to the original hit game, Fibbage.',
     screenblocker: 'Unfortunately, this screen scale isn\'t supported!',
     nttext: 'At the moment, we don\'t have a translation. But you can help join the translation team!',
+    aboutus: 'about us',
+    titleaboutus: 'About Us',
   },
   ee: {
     ds: 'DISCORDI SERVER',
@@ -263,6 +386,10 @@ const langArr = {
     titlefaq: 'KKK',
     titlenews: 'Uudised',
     titlegames: 'Mängud',
+    screenblocker: 'Kahjuks seda ekraanisuurust ei toetata!',
+    nttext: 'Hetkel meil ei ole tõlkeid, aga võid meie tõlketiimiga ühineda!',
+    aboutus: 'meist',
+    titleaboutus: 'Meist',
   },
   lv: {
     ds: 'DISCORD SERVERIS',
@@ -286,6 +413,9 @@ const langArr = {
     statusip: 'Procesā',
     drawful: 'Zīmurgs',
     screenblocker: 'Diemžēl šī ekrāna skala netiek atbalstīta!',
+    nttext: 'Šobrīd mums nav tulkojuma. Bet tu vari palīdzēt pievienoties tulkošanas komandai!',
+    aboutus: 'par mums',
+    titleaboutus: 'Par mums',
   },
   lt: {
     ds: 'DISCORDO SERVERIS',
@@ -329,30 +459,70 @@ function setLang(lang) {
         elem.textContent = langArr[lang][key];
       }
     }
-    if(lang=='en') { 
-      document.getElementById("games").innerHTML = `
+    if(lang=='en') {
+      console.log('English');
+      if(document.getElementById("games")){
+        document.getElementById("games").innerHTML = `
         ${gamesDataen.map(gamesen).join("")}
       `;
+      }
+      if(document.getElementById("aboutus")){
+        document.getElementById("aboutus").innerHTML = `
+          ${aboutusen.map(aboutus).join("")}
+        `;
+      }
     }
-    if(lang=='ee') { 
-      document.getElementById("games").innerHTML = `
-        ${gamesDataee.map(gamessad).join("")}
-      `;
+    if(lang=='ee') {
+      console.log('Eesti');
+      if(document.getElementById("games")){
+        document.getElementById("games").innerHTML = `
+          ${gamesDataee.map(gamessad).join("")}
+        `;
+      }
+      if(document.getElementById("aboutus")){
+        document.getElementById("aboutus").innerHTML = `
+          ${aboutusee.map(aboutus).join("")}
+        `;
+      }
     }
-    if(lang=='lv') { 
-      document.getElementById("games").innerHTML = `
-        ${gamesDatalv.map(games).join("")}
-      `;
+    if(lang=='lv') {
+      console.log('Latviešu');
+      if(document.getElementById("games")){
+        document.getElementById("games").innerHTML = `
+          ${gamesDatalv.map(games).join("")}
+        `;
+      }
+      if(document.getElementById("aboutus")){
+        document.getElementById("aboutus").innerHTML = `
+          ${aboutuslv.map(aboutus).join("")}
+        `;
+      }
     }
     if(lang=='lt') { 
-      document.getElementById("games").innerHTML = `
-        ${gamesDatalt.map(games).join("")}
-      `;
+      console.log('Lietuvių');
+      if(document.getElementById("games")){
+        document.getElementById("games").innerHTML = `
+          ${gamesDatalt.map(games).join("")}
+        `;
+      }
+      if(document.getElementById("aboutus")){
+        document.getElementById("aboutus").innerHTML = `
+          ${aboutuslt.map(aboutus).join("")}
+        `;
+      }
     }
-    if(lang=='test') { 
-      document.getElementById("games").innerHTML = `
-        ${gamesDatatest.map(games).join("")}
-      `;
+    if(lang=='test') {
+      console.log('Test');
+      if(document.getElementById("games")){
+        document.getElementById("games").innerHTML = `
+          ${gamesDatatest.map(games).join("")}
+        `;
+      }
+      if(document.getElementById("aboutus")){
+        document.getElementById("aboutus").innerHTML = `
+          ${aboutusen.map(aboutus).join("")}
+        `;
+      }
     }
 }
 var lang = (window.hasOwnProperty('localStorage') && window.localStorage.getItem('lang', lang)) || 'en';

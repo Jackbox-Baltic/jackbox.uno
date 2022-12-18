@@ -1,9 +1,9 @@
 function ladtheme() {
 	const toggleTheme = document.querySelector('.toggle-theme')
-	console.log('Found!')
+	console.log('.toggle-theme is found!')
 	let el = document.documentElement
 	var x = document.getElementById("tct");
-	console.log('Found!')
+	console.log('tct is found!')
 
 	toggleTheme.addEventListener('click', () => {
         console.log('It works!');
