@@ -289,38 +289,53 @@ const aboutuslt= [
 
 function aboutus(text) {
   return `
-  <div data-v-2ba6adc5="" class="recent">
+  <div data-v-2ba6adc4="" class="game_background">
     <div data-v-2ba6adc5="" class="constrain">
       <div data-v-2ba6adc5="" class="top-items">
         <h2 data-v-2ba6adc5="" ${text.class}>${text.welcome}</h2>
-        <p data-v-2ba6adc5="">${text.jackboxbaltic}</p>
+        <p data-v-2ba6adc5="" class="ct w">${text.jackboxbaltic}</p>
         <div class="spacer"></div>
-        <div class="splitter">
+      </div>
+    </div>
+  </div>
+  <div data-v-2ba6adc5="" class="recent">
+    <div data-v-2ba6adc5="" class="constrain">
+      <div data-v-2ba6adc5="" class="top-items">
+      <div class="splitter">
           <div class="splittblock">
-            <h1 data-v-2ba6adc5="" class="rt">${text.aboutjg}</h1>
-            <p data-v-2ba6adc5="" class="rt">${text.aboutjgd}</p>
+            <div class="clearfix whitebox">
+              <h1 data-v-2ba6adc5="" >${text.aboutjg}</h1>
+              <div><img src="/assets/jackboxgames.png" alt="Jackbox Games logo" style="height:250px;margin-left:15px;float:right;"></div>
+              <p data-v-2ba6adc5="" >${text.aboutjgd}</p>
+            </div>
           </div>
-          <div class="spacer"></div>
           <div class="splittblock">
-            <h1 data-v-2ba6adc5="">${text.cons}</h1>
-            <p data-v-2ba6adc5=""><strong>${text.ttcons}</strong>: Alacris <span>(eesti)</span>, Dejelnieks <span>(latviešu)</span>, Vvv <span>(lietuvių)</span></p>
-            <p data-v-2ba6adc5=""><strong>${text.tecons}</strong>: Dejelnieks <span>(eesti, latviešu, lietuvių)</span></p>
-            <p data-v-2ba6adc5=""><strong>${text.fwcons}</strong>: Dejelnieks <span>(eesti, latviešu, lietuvių)</span></p></p>
-            <p data-v-2ba6adc5=""><strong>${text.gcons}</strong>: Trstnlkr2582 .D <span>(from Jackbox en español)</span></p>
-            <p data-v-2ba6adc5=""><strong>${text.sthanks}</strong>: Trstnlkr2582 .D, Akira896 <span>(${text.from} Jackbox en español)</span>, Erizzle <span>(${text.from} Jackbox Translations DE)</p>
+            <div class="clearfix whitebox">
+              <h1 data-v-2ba6adc5="">${text.cons}</h1>
+              <div><img src="/assets/bubs.gif" style="height:250px;margin-left:15px;float:right;"></div>
+              <p data-v-2ba6adc5=""><strong>${text.ttcons}</strong>: Alacris <span>(eesti)</span>, Dejelnieks <span>(latviešu)</span>, Vvv <span>(lietuvių)</span></p>
+              <p data-v-2ba6adc5=""><strong>${text.tecons}</strong>: Dejelnieks <span>(eesti, latviešu, lietuvių)</span></p>
+              <p data-v-2ba6adc5=""><strong>${text.fwcons}</strong>: Dejelnieks <span>(eesti, latviešu, lietuvių)</span></p></p>
+              <p data-v-2ba6adc5=""><strong>${text.gcons}</strong>: Trstnlkr2582 .D <span>(from Jackbox en español)</span></p>
+              <p data-v-2ba6adc5=""><strong>${text.sthanks}</strong>: Trstnlkr2582 .D, Akira896 <span>(${text.from} Jackbox en español)</span>, Erizzle <span>(${text.from} Jackbox Translations DE)</p>
+            </div>
           </div>
         </div>
         <div class="spacer"></div>
-        <h1 data-v-2ba6adc5="" class="ct">${text.cont}</h1>
-        <p data-v-2ba6adc5="" class="ct">${text.contd}</p>
-        <div data-v-8691596e="" data-v-2ba6adc4="">
-          <nav data-v-082a7a6a="" class="nav screen">
-            <ul data-v-082a7a6a="" id="clang">
-              <li data-v-082a7a6a="">
-                <a data-v-082a7a6a="" href="https://discord.gg/TNK3wsHHUW" target="_blank" class="lang-ds">${text.ds}<div data-v-082a7a6a="" style="border: 3px solid var(--bgrecent);" class="indicator"></div></a>
-              </li>
-            </ul>
-          </nav>
+        <div class="splittblock">
+          <div class="clearfix whitebox">
+            <h1 data-v-2ba6adc5="" class="ct">${text.cont}</h1>
+            <p data-v-2ba6adc5="" class="ct">${text.contd}</p>
+            <div data-v-8691596e="" data-v-2ba6adc4="">
+              <nav data-v-082a7a6a="" class="nav screen">
+                <ul data-v-082a7a6a="" id="clang">
+                  <li data-v-082a7a6a="">
+                    <a data-v-082a7a6a="" href="https://discord.gg/TNK3wsHHUW" target="_blank" class="lang-ds">${text.ds}<div data-v-082a7a6a="" style="border: 3px solid var(--bgrecent);" class="indicator"></div></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
       </div>
     </div>

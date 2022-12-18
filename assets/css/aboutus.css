@@ -1,8 +1,9 @@
 :root {
-    --h0fs: 48px;
-    --h3fs: 32px;
-    --pfs: 20px;
+    --h0fs: 64px;
+    --h3fs: 36px;
+    --pfs: 22px;
     --spanfs: 16px;
+    --wfs: 26px;
 }
 
 .jbg[data-v-2ba6adc5] {
@@ -14,8 +15,11 @@
 }
 
 .recent[data-v-2ba6adc5] {
-    padding: 30px 8%;
+    padding: 35px 8%;
     background: var(--bgrecent);
+    margin-top: -17px;
+    padding-bottom: 50px;
+    border-radius: 20px;
     box-shadow: inset 0 10px 10px -16px var(--boxshadow);
 }
 
@@ -38,7 +42,7 @@
 h1 {
     display: block;
     font-size: 1.17em;
-    margin-block-start: 1em;
+    margin-block-start: 0.1em;
     margin-block-end: 0.5em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
@@ -54,6 +58,9 @@ h2 {
     margin-inline-end: 0px;
     font-size: var(--h0fs);
     font-weight: bold;
+    color: #fff;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
 }
 
 p[data-v-2ba6adc5] {
@@ -71,8 +78,18 @@ p[data-v-2ba6adc5] span {
     font-weight: 500;
 }
 
+p[data-v-2ba6adc5].w {
+    font-size: var(--wfs);
+    color: #fff;
+    padding: 0px 8% 0px 8%;
+}
+
 .spacer {
-    height: 20px;
+    display: block;
+    height: 1px;
+    background-color: #fff;
+    width: auto;
+    margin: 16px;
 }
 
 .splitter {
@@ -188,18 +205,72 @@ p[data-v-2ba6adc5] span {
     }
 }
 
-@media screen and (max-width: 1023px) {
-    .splittblock {
-        flex-basis: 100%;
-        padding: 0px;
+.game_background {
+    padding: 30px 22px;
+    padding-bottom: 40px;
+    background-image: url("/assets/7.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    box-shadow: inset 0 10px 10px -16px var(--boxshadow);
+}
+
+.game_background img {
+    padding-left: var(--plimg);
+    padding-right: var(--plimg);
+    width: 100%;
+    margin: 0 auto;
+    user-select: none;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.whitebox {
+    background-color: var(--wvsbbg);
+    border-radius: 15px;
+    padding: 15px 25px;
+    height: 100%;
+}
+
+.whitebox div {
+    display: block;
+}
+
+@media screen and (max-width: 1499px) {
+    .whitebox div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
-@media screen and (max-width: 446px) {
+@media screen and (max-width: 1023px) {
+    .splittblock {
+        flex-basis: 100%;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: none;
+        display: none;
+    }
+
+    .whitebox img {
+        position: fixed;
+        left: -1100px;
+    }
+}
+
+@media screen and (max-width: 499px) {
     :root {
-        --h0fs: 32px;
+        --h0fs: 36px;
         --h3fs: 24px;
-        --pfs: 16px;
+        --pfs: 14px;
         --spanfs: 12px;
+        --wfs: 18px;
     }
 }

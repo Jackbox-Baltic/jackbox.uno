@@ -7,9 +7,11 @@
     <link href="/assets/css/testrecent.css" rel="stylesheet">
     <link href="/assets/css/listofgames.css" rel="stylesheet">
     <link href="/assets/css/li.css" rel="stylesheet">
-    <link href="/assets/css/popup.css" rel="stylesheet">
 </head>
 <body style="background-color:#3241ce">
+  <div class="progress-container">
+    <div class="progress-bar" id="ScrollIndicator"></div>
+  </div>
 <div data-v-8691596e="" data-v-2ba6adc4="" class="top-bar">
   <nav data-v-082a7a6a="" class="nav screen">
     <ul data-v-082a7a6a="">
@@ -91,56 +93,102 @@
       </div>
     </li>
   </div>
-  <script>
-    let popupBg = document.querySelector('.modal');
-    let popup = document.querySelector('.content');
-    let openPopupButtons = document.querySelectorAll('.open-popup');
-    let closePopupButton = document.querySelector('.actions');
-
-    let popupBgee = document.querySelector('.modalee');
-    let popupee = document.querySelector('.contentee');
-    let openPopupButtonsee = document.querySelectorAll('.open-popupee');
-    let closePopupButtonee = document.querySelector('.actions');
+  <div>
+    <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
+    <button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
+    <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
+    <button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
+    <div id="London" class="tabcontent">
+      <h1>London</h1>
+      <p>London is the capital city of England.</p>
+    </div>
     
-    openPopupButtons.forEach((button) => {
-        button.addEventListener('click', (e) => {
-            e.preventDefault();
-            popupBg.classList.add('active');
-            popup.classList.add('active');
-        })
-    });
+    <div id="Paris" class="tabcontent">
+      <h1>Paris</h1>
+      <p>Paris is the capital of France.</p>
+    </div>
+    
+    <div id="Tokyo" class="tabcontent">
+      <h1>Tokyo</h1>
+      <p>Tokyo is the capital of Japan.</p>
+    </div>
+    
+    <div id="Oslo" class="tabcontent">
+      <h1>Oslo</h1>
+      <p>Oslo is the capital of Norway.</p>
+    </div>
+  </div>
+  <style>
+    .progress-container {
+      width: 100%;
+      height: 8px;
+      background: #ccc;
+      position: fixed;
+      top: 0;
+      z-index: 1;
+    }
+    
+    .progress-bar {
+      height: 8px;
+      background: #04AA6D;
+      width: 0%;
+    }
 
-    closePopupButton.addEventListener('click',() => {
-        popupBg.classList.remove('active');
-        popup.classList.remove('active');
-    });
+    .tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  #London {background-color:red;}
+  #Paris {background-color:green;}
+  #Tokyo {background-color:blue;}
+  #Oslo {background-color:orange;}
+  </style>
+  <script>
+    window.onscroll = function() {ScrollIndicator()};
 
-    openPopupButtonsee.forEach((button) => {
-        button.addEventListener('click', (e) => {
-            e.preventDefault();
-            popupBgee.classList.add('active');
-            popupee.classList.add('active');
-        })
-    });
+    function ScrollIndicator() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("ScrollIndicator").style.width = scrolled + "%";
+    }
 
-    closePopupButtonee.addEventListener('click',() => {
-        popupBgee.classList.remove('active');
-        popupee.classList.remove('active');
-    });
-
-    document.addEventListener('click', (e) => {
-        if(e.target === popupBg) {
-            popupBg.classList.remove('active');
-            popup.classList.remove('active');
-        }
-    });
-
-    document.addEventListener('click', (e) => {
-        if(e.target === popupBgee) {
-            popupBgee.classList.remove('active');
-            popupee.classList.remove('active');
-        }
-    });
+    function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+  
+  }
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
 
     document.querySelector('.dark').addEventListener('mouseover', function(event)
       {   

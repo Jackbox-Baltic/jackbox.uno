@@ -46,6 +46,7 @@ a {
 
 :root {
     --bgtheme: #3241ce;
+    /*linear-gradient(141deg, rgba(77,127,255,1) 0%, rgba(55,83,232,1) 30%, rgba(43,58,227,1) 66%, rgba(50,65,206,1) 100%);*/
     --bgheader: #4254F4;
     --bgrecent: #e0e0e0;
     --textPrimary: #333333;
@@ -57,10 +58,12 @@ a {
     --inputPrimary: #e0e0e0;
     --inputSecondary: #e0e0e0;
     --liborder: #c7c7c7;
+    --wvsbbg: #fff;
 }
 
 :root[data-theme='dark']{
     --bgtheme: #0a1420;
+    /*linear-gradient(141deg, rgba(31,41,55,1) 0%, rgba(13,28,43,1) 30%, rgba(10,20,32,1) 66%, rgba(10,20,32,1) 100%);*/
     --bgheader: #0a1420;
     --bgrecent: #0d1c2b;
     --textPrimary: #f5f7f7;
@@ -72,12 +75,14 @@ a {
     --inputPrimary: #1f2937;
     --inputSecondary: #353f4d;
     --liborder: #c7c7c7;
+    --wvsbbg: #353f4d;
 }
 
 body {
-  background-color: var(--bgtheme);
-  -webkit-transition: all 0.5s ease;
-                transition: all 0.5s ease;
+    height: 1vh;
+    background: var(--bgtheme);
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
 }
 
 .top-bar[data-v-8691596e] {
@@ -147,6 +152,15 @@ p {
     position: absolute;
     opacity: 0;
     visibility: hidden;
+}
+
+/*<span class="badge">New</span>*/
+.badge {
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 359px) {
