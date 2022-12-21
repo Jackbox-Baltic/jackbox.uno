@@ -252,6 +252,36 @@ svg:not(:root) {
     user-select: none;
 }
 
+.name2[data-v-556a942f] {
+    text-align: left;
+    float: left;
+    width: 50%;
+    padding-top: var(--namept);
+    color: #0e167d;
+    font-size: var(--namefs);
+    text-transform: uppercase;
+    transition: color .1s;
+    line-height: 1.3;
+    user-select: none;
+}
+
+.date2[data-v-556a942f] {
+    float: right;
+    width: 50%;
+    color: #000;
+    font-size: var(--datefs);
+    line-height: 1.2;
+    text-align: right;
+    user-select: none;
+}
+
+.date2 span[data-v-556a942f] {
+    display: block;
+    color: #333;
+    font-size: var(--datespanfs);
+    user-select: none;
+}
+
 .new[data-v-556a942f] {
     position: absolute;
     top: 0;

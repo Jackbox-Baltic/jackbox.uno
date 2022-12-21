@@ -104,12 +104,19 @@ p[data-v-2ba6adc5].w {
 
 .lv[data-v-2ba6adc5]::before {
     content: "Laipni lūgti!";
-    animation: welcome 15s ease 1;
+    animation: welcomelv 15s ease 1;
     -webkit-transition: all 0.5s ease;
             transition: all 0.5s ease;
 }
 
-@keyframes welcome {
+.ee[data-v-2ba6adc5]::before {
+    content: "Tere tulemast!";
+    animation: welcomeee 15s ease 1;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+@keyframes welcomelv {
     0% {
         content: "W";
     } 
@@ -202,6 +209,105 @@ p[data-v-2ba6adc5].w {
     }
     100% {
         content: "Laipni lūgti!";
+    }
+}
+
+@keyframes welcomeee {
+    0% {
+        content: "W";
+    } 
+    3% {
+        content: "We";
+    }
+    6% {
+        content: "Wel";
+    }
+    9% {
+        content: "Welc";
+    }
+    12% {
+        content: "Welco";
+    }
+    15% {
+        content: "Welcom";
+    }
+    18% {
+        content: "Welcome";
+    }
+    21% {
+        content: "Welcome!";
+    }
+    45% {
+        content: "Welcome!";
+    } 
+    46% {
+        content: "Welcome";
+    } 
+    47% {
+        content: "Welcom";
+    }
+    48% {
+        content: "Welco";
+    }
+    49% {
+        content: "Welc";
+    }
+    50% {
+        content: "Wel";
+    }
+    51% {
+        content: "We";
+    }
+    52% {
+        content: "W";
+    }
+    53% {
+        content: "　";
+    }
+    58% {
+        content: "T";
+    }
+    61% {
+        content: "Te";
+    }
+    64% {
+        content: "Ter";
+    }
+    67% {
+        content: "Tere";
+    }
+    70% {
+        content: "Tere ";
+    }
+    73% {
+        content: "Tere t";
+    }
+    76% {
+        content: "Tere tu";
+    }
+    79% {
+        content: "Tere tul";
+    }
+    82% {
+        content: "Tere tule";
+    }
+    85% {
+        content: "Tere tulem";
+    }
+    87% {
+        content: "Tere tulema";
+    }
+    90% {
+        content: "Tere tulemas";
+    }
+    93% {
+        content: "Tere tulemast";
+    }
+    96% {
+        content: "Tere tulemast!";
+    }
+    100% {
+        content: "Tere tulemast!";
     }
 }
 
