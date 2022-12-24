@@ -1,0 +1,138 @@
+:root {
+    --h0fs: 64px;
+    --aihfs: 18px;
+    --aibcfs: 16px;
+}
+
+.jbg[data-v-2ba6adc5] {
+    background: var(--bgtheme);
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--textPrimary);
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+.recent[data-v-2ba6adc5] {
+    padding: 35px 8% 0px 8%;
+    background: var(--bgrecent);
+    margin-top: -17px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    box-shadow: inset 0 10px 10px -16px var(--boxshadow);
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+.constrain[data-v-2ba6adc5] {
+    width: 100%;
+    min-height: 100%;
+    min-width: 300px;
+}
+
+.recent .top-items[data-v-2ba6adc5] {
+    margin: 0 auto 12px;
+}
+
+h1 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: var(--h0fs);
+    font-weight: bold;
+    color: #fff;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+.game_background {
+    padding: 30px 22px;
+    padding-bottom: 40px;
+    background-image: url("/assets/7.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    box-shadow: inset 0 10px 10px -16px var(--boxshadow);
+}
+
+.game_background img {
+    padding-left: var(--plimg);
+    padding-right: var(--plimg);
+    width: 100%;
+    margin: 0 auto;
+    user-select: none;
+}
+
+.accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.accordion-item {
+    background-color: var(--wvsbbg);
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+
+.accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--aihfs);
+}
+
+.accordion-item-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+}
+  
+.accordion-item-header.active::after {
+    content: "\2212";
+}
+
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion-item-body-content {
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+    font-size: var(--aibcfs);
+}
+
+.accordion-item-body-content p{
+    font-size: var(--aibcfs);
+}
+
+.accordion-item-body-content ul {
+    padding-left: 1rem;
+}
+
+strong {
+    font-weight: 700;
+}
+  
+@media screen and (max-width: 537px) {
+    :root {
+        --h0fs: 36px;
+        --aihfs: 14px;
+        --aibcfs: 12px;
+    }
+}

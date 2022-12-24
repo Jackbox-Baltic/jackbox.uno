@@ -7,11 +7,13 @@
 }
 
 .jbg[data-v-2ba6adc5] {
-    background: #fff;
+    background: var(--bgtheme);
     font-family: Helvetica,Arial,sans-serif;
     font-size: 10px;
     font-weight: bold;
     color: var(--textPrimary);
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
 }
 
 .recent[data-v-2ba6adc5] {
@@ -21,6 +23,8 @@
     padding-bottom: 50px;
     border-radius: 20px;
     box-shadow: inset 0 10px 10px -16px var(--boxshadow);
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
 }
 
 .constrain[data-v-2ba6adc5] {
@@ -35,8 +39,6 @@
 
 .recent h1[data-v-2ba6adc5] {
     font-size: var(--h3fs);
-    -webkit-transition: all 0.5s ease;
-            transition: all 0.5s ease;
 }
 
 h1 {
@@ -65,8 +67,6 @@ h2 {
 
 p[data-v-2ba6adc5] {
     font-size: var(--pfs);
-    -webkit-transition: all 0.5s ease;
-            transition: all 0.5s ease;
 }
 
 p[data-v-2ba6adc5] strong {
@@ -82,14 +82,6 @@ p[data-v-2ba6adc5].w {
     font-size: var(--wfs);
     color: #fff;
     padding: 0px 8% 0px 8%;
-}
-
-.spacer {
-    display: block;
-    height: 1px;
-    background-color: #fff;
-    width: auto;
-    margin: 16px;
 }
 
 .splitter {

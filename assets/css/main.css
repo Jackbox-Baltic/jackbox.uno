@@ -42,6 +42,13 @@ div {
 
 a {
     text-decoration: none;
+    color: var(--anlad);
+}
+
+a:hover {
+    -webkit-text-shadow: 4px 4px 4px var(--anlad);
+    -moz-text-shadow: 4px 4px 4px var(--anlad);
+        text-shadow: 1px 1px 10px var(--anlad);
 }
 
 :root {
@@ -161,6 +168,22 @@ p {
     padding: 4px 8px;
     text-align: center;
     border-radius: 5px;
+}
+
+.discord {
+    background-color: #42464d;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.spacer {
+    display: block;
+    height: 1px;
+    background-color: #fff;
+    width: auto;
+    margin: 16px;
 }
 
 @media screen and (max-width: 359px) {

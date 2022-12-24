@@ -31,8 +31,7 @@
     </script>
 
     <link href="/assets/css/main.css" rel="stylesheet">
-    <link href="/assets/css/li.css" rel="stylesheet">
-    <link href="/assets/css/aboutus.css" rel="stylesheet">
+    <link href="/assets/css/faq.css" rel="stylesheet">
     <link href="/assets/css/header.css" rel="stylesheet">
     <link href="/assets/css/footer.css" rel="stylesheet">
 </head>
@@ -46,14 +45,14 @@
   <header id="header" class="header" data-v-0c67992c="">
     <div class="constrain" data-v-0c67992c="">
       <div class="logo" data-v-0c67993c=""><a data-v-0c67993c="" href="/index.html"></a></div>
-      <a data-v-0c67992c="" class="lang-aboutus non">about us</a>
-      <a data-v-0c67992c="" href="faq.html" class="lang-faq">faq</a>
+      <a data-v-0c67992c="" href="aboutus.html" class="lang-aboutus">about us</a>
+      <a data-v-0c67992c="" href="" class="lang-faq non">faq</a>
       <a data-v-0c67992c="" href="games/index.html" class="lang-games">games</a>
     </div>
   </header>
   <div data-v-8691596e="" data-v-2ba6adc4="" class="top-bar"></div>
   <div data-v-2ba6adc5="" class="jbg">
-    <div id="aboutus"></div>
+    <div id="faq"></div>
   </div>
   <div>
     <footer class="footer" data-v-082a7a6b="">
@@ -78,5 +77,32 @@
   </div>
   <script src="/assets/js/ladtheme.js"></script>
   <script src="/assets/js/language.js"></script>
+  <script>
+    // https://codepen.io/Coding_Journey/pen/RwNgYmm
+    const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+    accordionItemHeaders.forEach(accordionItemHeader => {
+    accordionItemHeader.addEventListener("click", event => {
+        
+        // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+        
+        // const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+        // if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+        //   currentlyActiveAccordionItemHeader.classList.toggle("active");
+        //   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+        // }
+
+        accordionItemHeader.classList.toggle("active");
+        const accordionItemBody = accordionItemHeader.nextElementSibling;
+        if(accordionItemHeader.classList.contains("active")) {
+        accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+        }
+        else {
+        accordionItemBody.style.maxHeight = 0;
+        }
+        
+    });
+    });
+  </script>
 </body>
 </html>
