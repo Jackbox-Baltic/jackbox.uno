@@ -128,6 +128,12 @@ h1 {
 strong {
     font-weight: 700;
 }
+
+.faq a:hover {
+    -webkit-text-shadow: 4px 4px 4px var(--anlad);
+    -moz-text-shadow: 4px 4px 4px var(--anlad);
+        text-shadow: 1px 1px 10px var(--anlad);
+}
   
 @media screen and (max-width: 537px) {
     :root {

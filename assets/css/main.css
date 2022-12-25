@@ -45,12 +45,6 @@ a {
     color: var(--anlad);
 }
 
-a:hover {
-    -webkit-text-shadow: 4px 4px 4px var(--anlad);
-    -moz-text-shadow: 4px 4px 4px var(--anlad);
-        text-shadow: 1px 1px 10px var(--anlad);
-}
-
 :root {
     --bgtheme: #3241ce;
     /*linear-gradient(141deg, rgba(77,127,255,1) 0%, rgba(55,83,232,1) 30%, rgba(43,58,227,1) 66%, rgba(50,65,206,1) 100%);*/

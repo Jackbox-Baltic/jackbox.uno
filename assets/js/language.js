@@ -283,11 +283,11 @@ const aboutusee= [
     jackboxbaltic: "<strong>Jackbox Baltic</strong> on veebileht, kuhu me laeme üles mitteametlikud eesti-, läti- ja leedukeelsed tõlked Jackbox Games mängudele, tuntud kui Jackbox Party Pack'i loojad. Oleme alles oma tõlketeekonna alguses, seega võid meile appi tulla meie Discordi serveris!",
     aboutjg: "Mis on Jackbox Games",
     aboutjgd: "<strong>Jackbox Games</strong> on Chicagos asuv väike mängutegijate stuudio. Nende kuulsaim frantsiis - Sa ei tea mitte Essugi - on avaldatud alates 1995. aastast, mille all oli ka kunagi telesaade. 2013. aastal, olles seni olnud osa firmast Jellyvision, registreeris Jackbox Games ennast eraldi firmaks. Lisaks Jackbox Party Pack frantsiisile on stuudio mitmeid erinevaid mänge avaldanud, nende seas Kavalusekott, Luiskard ja Mõrvaviktoriinipralle.",
-    cons: "",
-    ttcons: "",
-    tecons: "",
-    fwcons: "",
-    gcons: "",
+    cons: "Panustajad",
+    ttcons: "Tõlkijad",
+    tecons: "Tehnilised toimetajad",
+    fwcons: "Fontide arendaja",
+    gcons: "Graafiline disainer",
     sthanks: "Suured tänud",
     cont: "Kontakt",
     contd: "Küsimuste või ettepanekute puhul saab ühendust meiega:",
@@ -599,7 +599,7 @@ const faqtest= [
     q3: "I bought a Party Pack on the Epic Games Store, how do I download the translation?",
     a3: "Apologies, but we are currently doing translations of the Steam version.",
     q4: "I found an error in one of the translations. Where can I report it?",
-    a4: "In the <span class=\"discord\">🔹︙mistakes</span> channel of <a href=\"https://discord.gg/TNK3wsHHUW\">the Discord server</a>. <br> If possible, do not skimp on the details. This makes it easier to find the problem.",
+    a4: "In the <span class=\"discord\">🔹︙mistakes</span> channel of <a href=\"https://discord.gg/TNK3wsHHUW\">the Discord server</a>. <br>If possible, do not skimp on the details. This makes it easier to find the problem.",
   }
 ];
 
@@ -607,10 +607,12 @@ const faqee= [
   {
     faqtext: "Korduma Kippuvad Küsimused",
     q1: "Miks on ekraan must peale tõlke allalaadimist?",
+    a1: "Juhul, kui teie ekraan mustaks läheb peale tõlke allalaadimist, on teie mäng piraaditud. Paraku piraaditud versioonid ei pruugi olla regulaarselt uuendatud, seega failistruktuurid ei pruugi ühtida. Siinkohal julgustame teid siiski mängu ostma.",
     q2: "Sooviks mängida. Kust saab ruumikoodi?",
     q3: "Ostsin Party Packi Epic Games poest, kuidas ma tõlke saan alla laadida?",
     a3: "Hetkel on tõlked saadaval Steami versioonidele.",
-    q4: "Ma leidsin tõlkes vea. Kus ma saan sellest teada anda?"
+    q4: "Ma leidsin tõlkes vea. Kus ma saan sellest teada anda?",
+    a4: "Vigadest saab teada anda <a href=\"https://discord.gg/TNK3wsHHUW\">meie Discordi serveris</a> kanalis <span class=\"discord\">🔹︙mistakes</span>. <br>Võimaluse korral olge detailsed, nii saame probleemi kiiremini lahendatud.",
   }
 ];
 
@@ -725,6 +727,8 @@ const langArr = {
     titleaboutus: 'About Us',
     csoon: 'Coming Soon',
     stext: 'Status',
+    view: 'VIEW THIS GAME',
+    MMXXYYYY: 'MONTH XX, YEAR',
   },
   ee: {
     ds: 'DISCORDI SERVER',
@@ -752,6 +756,8 @@ const langArr = {
     titleaboutus: 'Meist',
     csoon: 'Varsti tulekul',
     stext: 'Staatus',
+    view: 'VAATA',
+    MMXXYYYY: 'XX. MONTH, YEAR',
   },
   lv: {
     ds: 'DISCORD SERVERIS',
@@ -779,6 +785,8 @@ const langArr = {
     titleaboutus: 'Par mums',
     csoon: 'Drīzumā',
     stext: "Statuss",
+    view: 'APLŪKOT ŠO SPĒLI',
+    MMXXYYYY: 'YEAR. gada XX. MONTH',
   },
   lt: {
     ds: 'DISCORDO SERVERIS',
