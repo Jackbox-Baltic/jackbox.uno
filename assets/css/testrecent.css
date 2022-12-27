@@ -25,7 +25,7 @@
 .constrain[data-v-2ba6adc4] {
     width: 100%;
     min-height: 100%;
-    min-width: 320px;
+    min-width: 200px;
 }
 
 .recent .top-items[data-v-2ba6adc4] {
@@ -329,13 +329,18 @@ p[data-v-2ba6adc5] {
 }
 
 @media screen and (max-width: 400px) {
+    .past-game[data-v-556a942f] {
+        min-width: 295px;
+        max-width: 325px;
+    }
+
     :root {
         --h3fs: 17px;
         --datefs: 8px;
         --datespanfs: 6px;
         --namept: 0px;
         --namefs: 10px;
-        --pastgamewidth: 275px;
         --pfs: 20px;
     }
+
 }

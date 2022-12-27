@@ -1,0 +1,447 @@
+:root{
+    --plimg: 30%;
+    --h3fs: 144px;
+    --h2fs: 48px;
+    --pfs: 48px;
+    --stpfs: 24px;
+    --button: #000;
+    --i: rgba(0, 0, 0, 0.3);
+    --ci: rgb(0, 0, 0);
+    --h3fslv: 144px;
+    --pfslv: 48px;
+}
+
+:root[data-theme='dark']{
+    --button: #fff;
+    --i: rgba(255, 255, 255, 0.3);
+    --ci: rgb(255, 255, 255);
+}
+
+.jbg[data-v-2ba6adc4] {
+    background: #fff;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.jbg a[data-v-2ba6adc4] {
+    color: #4254f4;
+    text-decoration: none
+}
+
+.recent[data-v-2ba6adc4] {
+    padding: 30px 15px;
+    background: var(--bgrecent);
+    margin-top: -10px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    /*box-shadow: 0px 4px 24px rgb(0 0 0 / 25%);*/
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    box-shadow: 0 0 0 10px var(--bgtheme);
+}
+
+.constrain[data-v-2ba6adc4] {
+    width: 100%;
+    min-height: 100%;
+    min-width: 200px;
+}
+
+.recent .top-items[data-v-2ba6adc4] {
+    margin: 0 auto 12px;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+}
+
+.carousel-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.carousel-track-container {
+    background: #4254f4;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track, .carousel-track2 {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+}
+
+.carousel-slide, .carousel-slide2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel-button-left {
+    left: -40px;
+}
+
+.carousel-button-right {
+    right: -40px;
+}
+
+svg {
+    max-width: 50%;
+    display: block;
+}
+
+.carousel-button svg {
+    width: 24px;
+    fill: var(--button);
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel-indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background: var(--i);
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.carousel-indicator.current-slide {
+    background: var(--ci);
+}
+
+.is-hidden {
+    display: none;
+}
+
+.game_background {
+    padding: 30px 22px;
+    padding-bottom: 40px;
+    background-color: var(--bgtheme);;
+    box-shadow: inset 0 10px 10px -16px var(--boxshadow);
+}
+
+.game_background img {
+    width: 50%;
+    margin: 0 auto;
+    user-select: none;
+    padding-right: 10%;
+    position: relative;
+}
+
+.head {
+    flex-basis: 80%;
+    padding: 16px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.clearfix2::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.clearfix2 img {
+    height:100%;
+    float:right;
+}
+
+h1[data-v-2ba6adc4] {
+    padding-top: 10%;
+    display: block;
+    line-height: 1;
+    font-weight: bold;
+    font-size: var(--h3fs);
+    color: #fff;
+}
+
+p[data-v-2ba6adc4] {
+    padding-top: 1%;
+    font-size: var(--pfs);
+    color: #fff;
+}
+
+p[data-v-2ba6adc5] {
+    padding-top: 10px;
+    font-size: var(--stpfs);
+    color: var(--textPrimary);
+}
+
+.special, .speciallv {
+    position: absolute;
+    padding-left: 5%;
+}
+
+.special h1 {
+    width: 70%;
+}
+
+.special p {
+    position: relative;
+    width: 60%;
+}
+
+.speciallv h1 {
+    width: 70%;
+    font-size: var(--h3fslv);
+}
+
+.speciallv p {
+    position: relative;
+    width: 60%;
+    font-size: var(--pfslv);
+}
+
+.splitter {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.splittblock {
+    flex-basis: 50%;
+    padding: 16px;
+}
+
+
+h2[data-v-2ba6adc5] {
+    display: block;
+    line-height: 1;
+    font-weight: bold;
+    font-size: var(--h2fs);
+    color: var(--inputPrimary);
+    background-color: var(--textPrimary);
+    padding: 16px;
+}
+
+.space {
+    height: 50px;
+    display: block;
+}
+
+.p {
+    padding: 16px;
+}
+
+.p2 {
+    padding: 0px 16px 16px 16px;
+}
+
+@media screen and (max-width: 1524px) {
+    :root{
+        --h3fslv: 122px;
+        --pfslv: 42px;
+    }
+}
+
+@media screen and (max-width: 1430px) {
+    :root{
+        --h2fs: 42px;
+        --stpfs: 22px;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    :root{
+        --h3fs: 122px;
+        --pfs: 42px;
+        --h3fslv: 100px;
+        --pfslv: 38px;
+    }
+
+    .splittblock {
+        flex-basis: 100%;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: none;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    :root{
+        --h3fslv: 112px;
+        --pfslv: 36px;
+    }
+}
+
+@media screen and (max-width: 1225px) {
+    :root{
+        --h3fslv: 98px;
+        --pfslv: 38px;
+    }
+
+    .speciallv p {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1169px) {
+    :root{
+        --h3fslv: 92px;
+        --pfslv: 32px;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    :root{
+        --h3fs: 100px;
+        --pfs: 38px;
+    }
+}
+
+@media screen and (max-width:995px) {
+    :root{
+        --h3fslv: 87px;
+        --pfslv: 32px;
+    }
+
+    .speciallv h1 {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:950px) {
+    :root{
+        --h3fs: 87px;
+        --pfs: 32px;
+        --h3fslv: 72px;
+        --pfslv: 28px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    :root {
+        --plimg: 20%;
+    }
+}
+
+@media screen and (max-width:830px) {
+    :root{
+        --h3fs: 72px;
+        --pfs: 28px;
+        --h2fs: 36px;
+        --stpfs: 18px;
+        --h3fslv: 64px;
+        --pfslv: 24px;
+    }
+}
+
+@media screen and (max-width:725px) {
+    :root{
+        --h3fs: 64px;
+        --pfs: 24px;
+        --h2fs: 32px;
+        --stpfs: 16px;
+        --h3fslv: 56px;
+        --pfslv: 22px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    :root{
+        --h3fs: 56px;
+        --pfs: 20px;
+        --plimg: 10%;
+        --h3fslv: 52px;
+        --pfslv: 20px;
+    }
+
+    .splittblock {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:610px) {
+    :root{
+        --h3fs: 56px;
+        --pfs: 20px;
+        --plimg: 10%;
+        --h3fslv: 48px;
+        --pfslv: 18px;
+    }
+
+    .speciallv {
+        position: relative;
+        padding-left: 0%;
+        text-align: center;
+    }
+
+    .speciallv h1 {
+        width: 100%;
+    }
+    
+    .speciallv p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:570px) {
+    :root{
+        --h3fs: 56px;
+        --pfs: 20px;
+    }
+
+    .special {
+        position: relative;
+        padding-left: 0%;
+        text-align: center;
+    }
+
+    .special h1 {
+        width: 100%;
+    }
+    
+    .special p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .clearfix2 img {
+        position: absolute;
+        opacity: 0;
+        top: -100px;
+    }
+}
+
+@media screen and (max-width: 537px) {
+    :root {
+        --h3fs: 48px;
+        --pfs: 18px;
+        --h2fs: 28px;
+        --stpfs: 14px;
+    }
+}

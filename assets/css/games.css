@@ -43,7 +43,7 @@
 .constrain[data-v-2ba6adc4] {
     width: 100%;
     min-height: 100%;
-    min-width: 320px;
+    min-width: 200px;
 }
 
 .recent .top-items[data-v-2ba6adc4] {
@@ -136,7 +136,7 @@ h1 {
 .game_background {
     padding: 30px 22px;
     padding-bottom: 40px;
-    background-image: url("/assets/7.png");
+    background-image: url("/assets/images/7.png");
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
@@ -195,8 +195,8 @@ li[data-v-082a7a6a] a {
     position: relative;
     display: inline-block;
     margin: 0 auto 20px;
-    min-width: var(--mmwidthpg);;
-    max-width: var(--mmwidthpg);;
+    min-width: var(--mmwidthpg);
+    max-width: var(--mmwidthpg);
     transform: translateZ(0);
     padding: 0px 16px;
     -webkit-transition: all 0.5s ease;
@@ -397,14 +397,15 @@ li[data-v-082a7a6a] .lang-downloadrn {
 }
 
 @media screen and (max-width: 400px) {
-    :root {
-        --mmwidthpg: 325px;
-    }
-
     .block-bg h1[data-v-2ba6adc4] {
         line-height: 1;
         padding-top: 10px;
         padding-left: 50px;
         padding-right: 50px;
+    }
+
+    .past-game[data-v-556a942f] {
+        min-width: auto;
+        max-width: auto;
     }
 }

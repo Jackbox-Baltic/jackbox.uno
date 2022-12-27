@@ -194,6 +194,11 @@ const gamessadDatalv= [
   }
 ];
 
+const gamessadDatalt= [
+  {
+  }
+];
+
 function gamessad(text) {
   return `
     <div class="">
@@ -222,6 +227,8 @@ function screenblockeren() {
         position: fixed;
         opacity: 100;
         visibility: visible;
+        -webkit-transition: all 0.5s ease;
+                transition: all 0.5s ease;
       }
 
       .screenblockeren p {
@@ -260,7 +267,7 @@ const aboutusen= [
   {
     class: "class=\"ct\"",
     welcome: "Welcome!",
-    jackboxbaltic: "<strong>Jackbox Baltic</strong> is the site where we upload unofficial Estonian, Latvian and Lithuanian translations for the games of Jackbox Games, known for being the creators of the Jackbox Party Pack. We are just starting our way into localisation of games, so you can help us by joining our team on the discord server!",
+    jackboxbaltic: "<strong>Jackbox Baltic</strong> is the site where we upload unofficial Estonian, Latvian and Lithuanian translations for the games of Jackbox Games, known for being the creators of the Jackbox Party Pack. We are just starting our way into localization of games, so you can help us by joining our team on the discord server!",
     aboutjg: "About Jackbox Games",
     aboutjgd: "<strong>Jackbox Games</strong> is a small game production studio from Chicago (Illinois). The most famous franchise - You Don't Know Jack - has been released since 1995, and even existed as a TV show. Being a part of Jellyvision, in 2013 the company separated and was named Jackbox Games. In addition to The Jackbox Party Pack franchise, a variety of games are released, for example - Quiplash, Fibbage, Trivia Murder Party.",
     cons: "Contributors",
@@ -292,7 +299,6 @@ const aboutusee= [
     cont: "Kontakt",
     contd: "Küsimuste või ettepanekute puhul saab ühendust meiega:",
     ds: "DISCORDI SERVER",
-    from: "",
   }
 ];
 
@@ -319,20 +325,7 @@ const aboutuslv= [
 const aboutuslt= [
   {
     class: "class=\"lt ct\"",
-    welcome: "",
-    jackboxbaltic: "",
-    aboutjg: "",
-    aboutjgd: "",
-    cons: "",
-    ttcons: "",
-    tecons: "",
-    fwcons: "",
-    gcons: "",
-    sthanks: "",
-    cont: "",
-    contd: "",
     ds: "DISCORDO SERVERIS",
-    from: "",
   }
 ];
 
@@ -354,14 +347,14 @@ function aboutus(text) {
           <div class="splittblock">
             <div class="clearfix whitebox">
               <h1 data-v-2ba6adc5="" >${text.aboutjg}</h1>
-              <div><img src="/assets/jackboxgames.png" alt="Jackbox Games logo" style="height:250px;margin-left:15px;float:right;"></div>
+              <div><img src="/assets/images/jackboxgames.png" alt="Jackbox Games logo" style="height:250px;margin-left:15px;float:right;"></div>
               <p data-v-2ba6adc5="" >${text.aboutjgd}</p>
             </div>
           </div>
           <div class="splittblock">
             <div class="clearfix whitebox">
               <h1 data-v-2ba6adc5="">${text.cons}</h1>
-              <div><img src="/assets/bubs.gif" style="height:250px;margin-left:15px;float:right;"></div>
+              <div><img src="/assets/images/bubs.gif" style="height:250px;margin-left:15px;float:right;"></div>
               <p data-v-2ba6adc5=""><strong>${text.ttcons}</strong>: Alacris <span>(eesti)</span>, Dejelnieks <span>(latviešu)</span>, Vvv <span>(lietuvių)</span></p>
               <p data-v-2ba6adc5=""><strong>${text.tecons}</strong>: Dejelnieks <span>(eesti, latviešu, lietuvių)</span>, Alacris <span>(eesti)</span>, Vvv <span>(lietuvių)</span></p>
               <p data-v-2ba6adc5=""><strong>${text.fwcons}</strong>: Dejelnieks <span>(eesti, latviešu, lietuvių)</span></p></p>
@@ -536,7 +529,7 @@ const games2lv= [
 
 const games2lt= [
   {
-    title: "",
+    //title: "",
   }
 ];
 
@@ -595,7 +588,7 @@ const faqtest= [
     q1: "Why do I get a black screen after installing my translation?",
     a1: "If the screen goes black after installing the translation, it means that your version is pirated. Pirated versions are often outdated and do not have the same file structure as current versions. We can only encourage you to get a legitimate version.",
     q2: "I want to play. Where do I get the room code?",
-    a2: "<p>There are two options:</p><ul><li><strong>to start yourself</strong> – you need to buy the game on Steam, install <a href=\"games/index.html\">our translation</a> and then proceed according to <a href=\"/manual.html\">the manual</a>.<!--If there is no company or friends, then look <a href=\"finder.html\">here</a>.--></li><li><!--<a href=\"finder.html\">--><strong>to find someone else's game</strong><!--</a>--> — you DON't need to buy and install the game, just find out the room code and go through <a href=\"https://jackbox.uno\">jackbox.uno</a>, then watch the gameplay where you got the code.</li></ul><p>Once again: the purchased and installed game is needed only by the one who starts (the host).<br>He and the rest of the participants join the game from their browsers (phones, tablets or computers) via <a href=\"https://jackbox.uno\">Jackbox.UNO</a>, you don't need to install anything else.</p>",
+    a2: "<p>There are two options:</p><ul><li><strong>to start yourself</strong> – you need to buy the game on Steam, install <a href=\"games/index.html\">our translation</a> and then proceed according to <a href=\"/future/manual.html\">the manual</a>.<!--If there is no company or friends, then look <a href=\"finder.html\">here</a>.--></li><li><!--<a href=\"finder.html\">--><strong>to find someone else's game</strong><!--</a>--> — you DON't need to buy and install the game, just find out the room code and go through <a href=\"https://jackbox.uno\">jackbox.uno</a>, then watch the gameplay where you got the code.</li></ul><p>Once again: the purchased and installed game is needed only by the one who starts (the host).<br>He and the rest of the participants join the game from their browsers (phones, tablets or computers) via <a href=\"https://jackbox.uno\">Jackbox.UNO</a>, you don't need to install anything else.</p>",
     q3: "I bought a Party Pack on the Epic Games Store, how do I download the translation?",
     a3: "Apologies, but we are currently doing translations of the Steam version.",
     q4: "I found an error in one of the translations. Where can I report it?",
@@ -609,6 +602,7 @@ const faqee= [
     q1: "Miks on ekraan must peale tõlke allalaadimist?",
     a1: "Juhul, kui teie ekraan mustaks läheb peale tõlke allalaadimist, on teie mäng piraaditud. Paraku piraaditud versioonid ei pruugi olla regulaarselt uuendatud, seega failistruktuurid ei pruugi ühtida. Siinkohal julgustame teid siiski mängu ostma.",
     q2: "Sooviks mängida. Kust saab ruumikoodi?",
+    a2: "<p>Mängimiseks on kaks valikut:</p><ul><li><strong>ise ruumi alustamiseks</strong> – hangi mäng Steamist, lae alla <a href=\"games/index.html\">meie tõlge</a> ja järgi <a href=\"/future/manual.html\">juhendis</a> olevaid juhtnööre.<!--Kui pole seltskonda, kellega mängida, siis vaata<a href=\"finder.html\">siia</a>.--></li><li><!--<a href=\"finder.html\">--><strong>mängida olemasolevas ruumis</strong><!--</a>--> — ei pea mängu alla laadima! Lihtsalt küsi mängu alustajalt ruumikoodi, ühine lehelt <a href=\"https://jackbox.uno\">jackbox.uno</a>, ning vaata ekraani, kus mängu näidatakse. </li></ul><p>Sellisel juhul on ainult mängu alustajal vaja omada ning alla laadida mäng.<br>Alustaja ning teised mängijad ühinevad läbi oma nutiseadmete (telefonide, tahvlite või arvutite) leheküljel <a href=\"https://jackbox.uno\">Jackbox.UNO</a> – midagi pole vaja alla laadida.</p>",
     q3: "Ostsin Party Packi Epic Games poest, kuidas ma tõlke saan alla laadida?",
     a3: "Hetkel on tõlked saadaval Steami versioonidele.",
     q4: "Ma leidsin tõlkes vea. Kus ma saan sellest teada anda?",
@@ -647,7 +641,7 @@ function faq(text) {
   <div data-v-2ba6adc5="" class="recent">
     <div data-v-2ba6adc5="" class="constrain">
       <div data-v-2ba6adc5="" class="top-items"></div>
-      <div class="accordion">
+      <div id="accordion" class="accordion">
         <div class="accordion-item">
           <div class="accordion-item-header">
             ${text.q1}
@@ -690,6 +684,247 @@ function faq(text) {
         </div>
       </div>
     </div>
+  </div>
+  `;
+}
+
+const manualtest= [
+  {
+    space: "　",
+    s1t1: "Getting started is easy! For Jackbox games, your phone or tablet is the controller and up to 8 people can play. Sometimes more! The main action of the game happens on your TV (or wherever you launched the game), but players use their own mobile devices to input answers and make choices.",
+    s1t2: "All Jackbox games are rated T For Teen. Many games have a family-friendly mode that can be turned on in the game’s settings menu, which brings the game closer to an E10+ rating!",
+    s1t3: "Remember, only one person in your group needs to own a Jackbox product in order to host the game.",
+    s1img: "/assets/images/05_OneOwnerToHost.jpg",
+    s2h1: "LAUNCH THE GAME AND GRAB A MOBILE DEVICE",
+    s2t1: "Once you launch and pick the game you want to play, you’ll see a four-letter room code in the lobby.",
+    s2t2: "To join, each player uses their phone or tablet and goes to jackbox.uno, then choose the language you are playing in, using whatever web browser you normally use.",
+    s2img1: "/assets/images/07_RoomCode.jpg",
+    s2img2: "/assets/images/08_ControllerWebsite.jpg",
+    s3h1: "ENTER THE ROOM CODE AT JACKBOX.UNO",
+    s3t1: "Once you’re there, enter that four-letter room code on your mobile device.",
+    s3t2: "Then, enter whatever name you want to use in the game. Hit the PLAY button, and you should be connected!",
+    s3t3: "In The Jackbox Party Pack 9, you can also connect by pointing your phone camera at the QR code in the lobby and then following the URL that appears.",
+    s3t4: "If you get disconnected during a game, refresh your browser. This fixes most disconnects!",
+    s3img1: "/assets/images/10_EnterRoomCode.jpg",
+    s3img2: "/assets/images/11_EnterName.jpg",
+    s3img3: "/assets/images/12_PressPlay.jpg",
+    s4h1: "START PLAYING!",
+    s4t1: "The very first person to connect is the VIP. When everyone who wants to play is connected and ready, the VIP can start the game from their device.",
+    s4t2: "If you’ve enabled the “Start Game from Controller Only” setting (in the game’s settings menu), you’ll need to press the button shown onscreen to begin.",
+    s4t3: "NOTE: “Everybody’s In” or “Start Game” will only appear on the screen if you have enough players to begin a game.",
+    s4img: "/assets/images/13_FirstIsVIP.jpg",
+  }
+];
+
+const manualee= [
+  {
+  }
+];
+
+const manuallv= [
+  {
+    s1img: "/assets/images/05_OneOwnerToHost_lv.jpg",
+    s2img1: "/assets/images/07_RoomCode_lv.jpg",
+    s2img2: "/assets/images/08_ControllerWebsite_lv.jpg",
+    s3img1: "/assets/images/10_EnterRoomCode_lv.jpg",
+    s3img2: "/assets/images/11_EnterName_lv.jpg",
+    s3img3: "/assets/images/12_PressPlay_lv.jpg",
+    s4img: "/assets/images/13_FirstIsVIP_lv.jpg",
+  }
+];
+
+const manuallt= [
+  {
+  }
+];
+
+function manual(text) {
+  return `
+    <div data-v-2ba6adc4="" class="recent">
+      <div data-v-2ba6adc4="" class="constrain">
+        <div data-v-2ba6adc4="" class="top-items">
+          <div class="splitter">
+            <div class="splittblock">
+              <div class="p2">
+                <p data-v-2ba6adc5="">${text.s1t1}</p>
+                <p data-v-2ba6adc5="">${text.s1t2}</p>
+                <p data-v-2ba6adc5="">　</p>
+                <p data-v-2ba6adc5="">${text.s1t3}</p>
+              </div>
+            </div>
+            <div class="splittblock">
+              <div id="carousel" class="carousel">
+                <button class="carousel-button carousel-button-left is-hidden">
+                  <svg><use href="#previous"></use></svg>
+                </button>
+
+                <div class="carousel-track-container">
+                  <ul class="carousel-track">
+                    <li class="carousel-slide current-slide">
+                      <img class="carousel-image" src="/assets/images/02_Controller.jpg">
+                    </li>
+                    <li class="carousel-slide">
+                      <img class="carousel-image" src="/assets/images/03_EightOrMore.jpg">
+                    </li>
+                    <li class="carousel-slide">
+                      <img class="carousel-image" src="/assets/images/04_TForTeen.jpg">
+                    </li>
+                    <li class="carousel-slide">
+                      <img class="carousel-image" src="${text.s1img}">
+                    </li>
+                  </ul>
+                </div>
+
+                <button class="carousel-button carousel-button-right">
+                  <svg><use href="#next"></use></svg>
+                </button>
+
+                <div class="carousel-nav">
+                  <button class="carousel-indicator current-slide"></button>
+                  <button class="carousel-indicator"></button>
+                  <button class="carousel-indicator"></button>
+                  <button class="carousel-indicator"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="space"></div>
+          <div class="splitter">
+            <div class="splittblock">
+              <h2 data-v-2ba6adc5="">${text.s2h1}</h2>
+              <div class="p">
+                <p data-v-2ba6adc5="">${text.s2t1}</p>
+                <p data-v-2ba6adc5="">${text.s2t2}</p>
+              </div>
+            </div>
+            <div class="splittblock">
+              <div id="carousel" class="carousel">
+                <button class="carousel-button carousel-button-left is-hidden">
+                  <svg><use href="#previous"></use></svg>
+                </button>
+
+                <div class="carousel-track-container">
+                  <ul class="carousel-track">
+                    <li class="carousel-slide current-slide">
+                      <img class="carousel-image" src="/assets/images/06_ChooseAGame.jpg">
+                    </li>
+                    <li class="carousel-slide">
+                      <img class="carousel-image" src="${text.s2img1}">
+                    </li>
+                    <li class="carousel-slide">
+                      <img class="carousel-image" src="${text.s2img2}">
+                    </li>
+                  </ul>
+                </div>
+
+                <button class="carousel-button carousel-button-right">
+                  <svg><use href="#next"></use></svg>
+                </button>
+
+                <div class="carousel-nav">
+                  <button class="carousel-indicator current-slide"></button>
+                  <button class="carousel-indicator"></button>
+                  <button class="carousel-indicator"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="splitter">
+            <div class="splittblock">
+              <h2 data-v-2ba6adc5="">${text.s3h1}</h2>
+              <div class="p">
+                <p data-v-2ba6adc5="">${text.s3t1}</p>
+                <p data-v-2ba6adc5="">${text.s3t2}</p>
+                <p data-v-2ba6adc5="">${text.s3t3}</p>
+                <p data-v-2ba6adc5="">　</p>
+                <p data-v-2ba6adc5="">${text.s3t4}</p>
+              </div>
+            </div>
+            <div class="splittblock">
+              <div id="carousel" class="carousel">
+                <button class="carousel-button carousel-button-left is-hidden">
+                  <svg><use href="#previous"></use></svg>
+                </button>
+
+                <div class="carousel-track-container">
+                  <ul class="carousel-track">
+                    <li class="carousel-slide current-slide">
+                      <img class="carousel-image" src="${text.s3img1}">
+                    </li>
+                    <li class="carousel-slide">
+                      <img class="carousel-image" src="${text.s3img2}">
+                    </li>
+                    <li class="carousel-slide">
+                      <img class="carousel-image" src="${text.s3img3}">
+                    </li>
+                  </ul>
+                </div>
+
+                <button class="carousel-button carousel-button-right">
+                  <svg><use href="#next"></use></svg>
+                </button>
+
+                <div class="carousel-nav">
+                  <button class="carousel-indicator current-slide"></button>
+                  <button class="carousel-indicator"></button>
+                  <button class="carousel-indicator"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="splitter">
+            <div class="splittblock">
+              <h2 data-v-2ba6adc5="">${text.s4h1}</h2>
+              <div class="p">
+                <p data-v-2ba6adc5="">${text.s4t1}</p>
+                <p data-v-2ba6adc5="">${text.s4t2}</p>
+                <p data-v-2ba6adc5="">　</p>
+                <p data-v-2ba6adc5="">${text.s4t3}</p>
+              </div>
+            </div>
+            <div class="splittblock">
+              <img class="carousel-image" src="${text.s4img}">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+const specialtest= [
+  {
+    class: "special",
+    howtoplay: "HOW TO PLAY?",
+    howtoplayd: "So, you want to play Jackbox Games! Great choice.",
+  }
+];
+
+const specialee= [
+  {
+    class: "specialee",
+  }
+];
+
+const speciallv= [
+  {
+    class: "speciallv",
+    howtoplay: "KĀ SPĒLĒT?",
+    howtoplayd: "Tātad, gribi spēlēt Jackbox Games! Lieliska izvēle.",
+  }
+];
+
+const speciallt= [
+  {
+    class: "speciallt",
+  }
+];
+
+function special(text) {
+  return `
+  <div class="${text.class}">
+    <h1 data-v-2ba6adc4="">${text.howtoplay}</h1>
+    <p data-v-2ba6adc4="">${text.howtoplayd}</p>
   </div>
   `;
 }
@@ -812,14 +1047,22 @@ const langEn = document.querySelector('#lang-en');
 const langEe = document.querySelector('#lang-ee');
 const langLv = document.querySelector('#lang-lv');
 const langLt = document.querySelector('#lang-lt');
-const langTest = document.querySelector('#lang-test');
+const Test = document.querySelector('#lang-test');
 
-langEn.addEventListener('click', setLang.bind(null, 'en'));
-langLv.addEventListener('click', setLang.bind(null, 'lv'));
-langEe.addEventListener('click', setLang.bind(null, 'ee'));
-langLt.addEventListener('click', setLang.bind(null, 'lt'));
-if(langTest){
-  langTest.addEventListener('click', setLang.bind(null, 'test'));
+if(langEn) {
+  langEn.addEventListener('click', setLang.bind(null, 'en'));
+}
+if(langEe){
+  langEe.addEventListener('click', setLang.bind(null, 'ee'));
+}
+if(langLv) {
+  langLv.addEventListener('click', setLang.bind(null, 'lv'));
+}
+if(langLt) {
+  langLt.addEventListener('click', setLang.bind(null, 'lt'));
+}
+if(Test){
+  Test.addEventListener('click', setLang.bind(null, 'test'));
 }
 
 function setLang(lang) {
@@ -836,7 +1079,7 @@ function setLang(lang) {
       console.log('English');
       if(document.getElementById("games")){
         document.getElementById("games").innerHTML = `
-        ${test.map(screenblockeren).join("")}
+          ${test.map(screenblockeren).join("")}
       `;
       }
       if(document.getElementById("aboutus")){
@@ -851,7 +1094,12 @@ function setLang(lang) {
       }
       if(document.getElementById("faq")){
         document.getElementById("faq").innerHTML = `
-        ${test.map(screenblockeren).join("")}
+          ${test.map(screenblockeren).join("")}
+      `;
+      }
+      if(document.getElementById("manual")){
+        document.getElementById("manual").innerHTML = `
+          ${test.map(screenblockeren).join("")}
       `;
       }
     }
@@ -889,6 +1137,16 @@ function setLang(lang) {
           ${tjppee.map(tjpp).join("")}
         `;
       }
+      if(document.getElementById("manual")){
+        document.getElementById("manual").innerHTML = `
+          ${manualee.map(manual).join("")}
+      `;
+      }
+      if(document.getElementById("special")){
+        document.getElementById("special").innerHTML = `
+          ${specialee.map(special).join("")}
+      `;
+      }
     }
     if(lang=='lv') {
       console.log('Latviešu');
@@ -923,6 +1181,16 @@ function setLang(lang) {
         document.getElementById("tjpp").innerHTML = `
           ${tjpplv.map(tjpp).join("")}
         `;
+      }
+      if(document.getElementById("manual")){
+        document.getElementById("manual").innerHTML = `
+          ${manuallv.map(manual).join("")}
+      `;
+      }
+      if(document.getElementById("special")){
+        document.getElementById("special").innerHTML = `
+          ${speciallv.map(special).join("")}
+      `;
       }
     }
     if(lang=='lt') { 
@@ -959,6 +1227,16 @@ function setLang(lang) {
           ${tjpplt.map(tjpp).join("")}
         `;
       }
+      if(document.getElementById("manual")){
+        document.getElementById("manual").innerHTML = `
+          ${manuallt.map(manual).join("")}
+      `;
+      }
+      if(document.getElementById("special")){
+        document.getElementById("special").innerHTML = `
+          ${speciallt.map(special).join("")}
+      `;
+      }
     }
     if(lang=='test') {
       console.log('Test');
@@ -991,6 +1269,16 @@ function setLang(lang) {
         document.getElementById("tjpp").innerHTML = `
           ${tjpptest.map(tjpp).join("")}
         `;
+      }
+      if(document.getElementById("manual")){
+        document.getElementById("manual").innerHTML = `
+          ${manualtest.map(manual).join("")}
+      `;
+      }
+      if(document.getElementById("special")){
+        document.getElementById("special").innerHTML = `
+          ${specialtest.map(special).join("")}
+      `;
       }
     }
 }

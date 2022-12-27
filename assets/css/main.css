@@ -67,7 +67,7 @@ a {
     /*linear-gradient(141deg, rgba(31,41,55,1) 0%, rgba(13,28,43,1) 30%, rgba(10,20,32,1) 66%, rgba(10,20,32,1) 100%);*/
     --bgheader: #0a1420;
     --bgrecent: #0d1c2b;
-    --textPrimary: #f5f7f7;
+    --textPrimary: #e0e0e0;
     --shadows: rgba(128, 128, 128, 0.4);
     --boxshadow: #353f4d;
     --lad: #000;
@@ -180,7 +180,7 @@ p {
     margin: 16px;
 }
 
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 317px) {
     .screenblocker {
         opacity: 100;
         z-index: 99999;

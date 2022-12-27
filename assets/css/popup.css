@@ -18,7 +18,7 @@
     pointer-events: all;
 }
 
-.modal-transition-leave-active[data-v-a0fd2f6c] {
+.modal-transition-leave[data-v-a0fd2f6c] {
     transition: opacity .15s;
 }
 

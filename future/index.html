@@ -11,7 +11,7 @@
     <meta name="og:title" content="Jackbox.UNO">
     <meta name="og:type" content="website">
     <meta name="og:description" content="Jackbox.uno is the site for choosing the controller Estonian, Latvian and Lithuanian language of fun games from Jackbox Games!">
-    <meta name="og:image" content="/assets/favicon-192.png">
+    <meta name="og:image" content="/assets/images/favicon-192.png">
 
     <meta name="application-name" content="Jackbox.UNO" />
     <meta name="mobile-web-app-capable" content="yes">
@@ -23,9 +23,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <link rel="icon" href="/assets/favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" href="/assets/favicon-32.png" sizes="32x32" />
-    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <link rel="icon" href="/assets/images/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="/assets/images/favicon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
 
     <script>
       document.documentElement.className = document.documentElement.className.replace("no-js", "js")
@@ -37,7 +37,8 @@
     <link href="/assets/css/snow.css" rel="stylesheet">
 </head>
 <body>
-  <div class="screenblocker center"><p class="lang-screenblocker">Unfortunately, this screen scale isn't supported!</p></div>
+  <noscript>Javascript must be enabled. Please enable Javascript in your browser settings and reload the page.</noscript>
+  <div id="app"></div>
   <header id="header" class="header" data-v-0c67992c="">
     <div class="constrain" data-v-0c67992c="">
       <div class="logo" data-v-0c67993c=""><a data-v-0c67993c="" href="/index.html"></a></div>
@@ -77,16 +78,12 @@
         <li data-v-082a7a6a="" class="version">
           <a data-v-1e5a97d3="" class="lang-site"><a data-v-1e5a97d3="" id="sv"></a></a>
         </li>
-        <!--
-        <li data-v-082a7a6a="">
-          <a data-v-082a7a6a="" href="https://jackboxgames.us7.list-manage.com/subscribe?u=a181fa3b606c035e1cee11b76&amp;id=eb7f0081d6" target="_blank"> MAILING LIST </a>
-        </li>-->
       </ul>
     </nav>
   </div>
-  <div data-v-a0fd2f6c="" class="modal jbg modal-transition-leave-active">
+  <div data-v-a0fd2f6c="" id="modal" class="modal jbg modal-transition-leave-active">
     <div data-v-e6c8e964="" data-v-a0fd2f6c="" class="jbg error content">
-      <img data-v-e6c8e964="" src="/assets/bubs.gif" alt="M Bubs" class="bubz image">
+      <img data-v-e6c8e964="" src="/assets/images/bubs.gif" alt="M Bubs" class="bubz image">
       <h3 data-v-e6c8e964="" class="text lang-modaloops">Oops...</h3>
       <h3 data-v-e6c8e964="" class="subtext lang-modalsubtext">At the moment, the site is still not ready. Clicking on "OK" will take you to the English version.kalba.</h3>
       <div data-v-e6c8e964="" class="actions"><button data-v-e6c8e964="" onclick="location.href='https://jackbox.tv'">ОК</button></div>
@@ -95,9 +92,7 @@
   <div id="snowflakeContainer" style="display: block;">
     <span class="snowflake"></span>
   </div>
-  <script src="/assets/js/popup.js"></script>
-  <script src="/assets/js/siteversion.js"></script>
-  <script src="/assets/js/ladtheme.js"></script>
+  <script src="/assets/js/app.js"></script>
   <script src="/assets/js/language.js"></script>
   <script src="/assets/js/snow.js"></script>
 </body>
