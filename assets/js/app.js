@@ -44,14 +44,14 @@ if(app){
             <span class="snowflake"></span>
         </div>
       `);
-      console.log('yes');
+      console.log('tiek nomainīts');
     };
 }
 
 if(document.getElementById("sv")){
     function siteversion() {
         let element = document.getElementById("sv");
-        element.innerHTML = "221227";
+        element.innerHTML = "230103";
     }
     siteversion()
 }
@@ -244,7 +244,7 @@ window.onload = function () {
     }
 }
 
-console.log(window.location.pathname)
+console.log('URL: ' + window.location.pathname)
 
 // Credits
 // Carousel: https://codepen.io/brianmarco/pen/WNdaNov

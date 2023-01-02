@@ -9,6 +9,8 @@
     --ci: rgb(0, 0, 0);
     --h3fslv: 144px;
     --pfslv: 48px;
+    --h3fsee: 116px;
+    --pfsee: 42px;
 }
 
 :root[data-theme='dark']{
@@ -198,7 +200,7 @@ p[data-v-2ba6adc5] {
     color: var(--textPrimary);
 }
 
-.special, .speciallv {
+.special, .speciallv, .specialee {
     position: absolute;
     padding-left: 5%;
 }
@@ -221,6 +223,17 @@ p[data-v-2ba6adc5] {
     position: relative;
     width: 60%;
     font-size: var(--pfslv);
+}
+
+.specialee h1 {
+    width: 60%;
+    font-size: var(--h3fsee);
+}
+
+.specialee p {
+    position: relative;
+    width: 51%;
+    font-size: var(--pfsee);
 }
 
 .splitter {
@@ -261,6 +274,8 @@ h2[data-v-2ba6adc5] {
     :root{
         --h3fslv: 122px;
         --pfslv: 42px;
+        --h3fsee: 108px;
+        --pfsee: 42px;
     }
 }
 
@@ -268,6 +283,8 @@ h2[data-v-2ba6adc5] {
     :root{
         --h2fs: 42px;
         --stpfs: 22px;
+        --h3fsee: 96px;
+        --pfsee: 42px;
     }
 }
 
@@ -277,6 +294,8 @@ h2[data-v-2ba6adc5] {
         --pfs: 42px;
         --h3fslv: 100px;
         --pfslv: 38px;
+        --h3fsee: 88px;
+        --pfsee: 38px;
     }
 
     .splittblock {
@@ -301,10 +320,20 @@ h2[data-v-2ba6adc5] {
     :root{
         --h3fslv: 98px;
         --pfslv: 38px;
+        --h3fsee: 82px;
+        --pfsee: 32px;
     }
 
     .speciallv p {
         width: 50%;
+    }
+
+    .specialee p {
+        width: 60%;
+    }
+
+    .specialee h1 {
+        padding-top: 15%;
     }
 }
 
@@ -319,6 +348,21 @@ h2[data-v-2ba6adc5] {
     :root{
         --h3fs: 100px;
         --pfs: 38px;
+        --h3fsee: 74px;
+        --pfsee: 32px;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    :root{
+        --h3fs: 100px;
+        --pfs: 38px;
+        --h3fsee: 68px;
+        --pfsee: 28px;
+    }
+
+    .specialee h1 {
+        padding-top: 13%;
     }
 }
 
@@ -326,6 +370,8 @@ h2[data-v-2ba6adc5] {
     :root{
         --h3fslv: 87px;
         --pfslv: 32px;
+        --h3fsee: 68px;
+        --pfsee: 36px;
     }
 
     .speciallv h1 {
@@ -339,12 +385,24 @@ h2[data-v-2ba6adc5] {
         --pfs: 32px;
         --h3fslv: 72px;
         --pfslv: 28px;
+        --h3fsee: 64px;
+        --pfsee: 28px;
+    }
+
+    .specialee h1 {
+        padding-top: 15%;
+    }
+
+    .specialee p {
+        width: 60%;
     }
 }
 
 @media screen and (max-width: 900px) {
     :root {
         --plimg: 20%;
+        --h3fsee: 58px;
+        --pfsee: 28px;
     }
 }
 
@@ -356,6 +414,16 @@ h2[data-v-2ba6adc5] {
         --stpfs: 18px;
         --h3fslv: 64px;
         --pfslv: 24px;
+        --h3fsee: 51px;
+        --pfsee: 22px;
+    }
+
+    .specialee h1 {
+        padding-top: 10%;
+    }
+
+    .specialee p {
+        width: 50%;
     }
 }
 
@@ -367,6 +435,8 @@ h2[data-v-2ba6adc5] {
         --stpfs: 16px;
         --h3fslv: 56px;
         --pfslv: 22px;
+        --h3fsee: 42px;
+        --pfsee: 18px;
     }
 }
 
@@ -377,10 +447,20 @@ h2[data-v-2ba6adc5] {
         --plimg: 10%;
         --h3fslv: 52px;
         --pfslv: 20px;
+        --h3fsee: 46px;
+        --pfsee: 24px;
     }
 
     .splittblock {
         padding: 0px;
+    }
+
+    .specialee h1 {
+        padding-top: 3%;
+    }
+
+    .specialee p {
+        width: 45%;
     }
 }
 
@@ -389,23 +469,31 @@ h2[data-v-2ba6adc5] {
         --h3fs: 56px;
         --pfs: 20px;
         --plimg: 10%;
-        --h3fslv: 48px;
+        --h3fslv: 56px;
         --pfslv: 18px;
+        --h3fsee: 42px;
+        --pfsee: 20px;
     }
 
-    .speciallv {
+    .speciallv,
+    .specialee {
         position: relative;
         padding-left: 0%;
         text-align: center;
     }
 
     .speciallv h1 {
-        width: 100%;
+        padding-top: 7%;
     }
     
-    .speciallv p {
+    .speciallv p,
+    .specialee p {
         width: 100%;
         text-align: center;
+    }
+
+    .specialee h1 {
+        padding-top: 10%;
     }
 }
 
@@ -421,7 +509,9 @@ h2[data-v-2ba6adc5] {
         text-align: center;
     }
 
-    .special h1 {
+    .special h1,
+    .speciallv h1,
+    .specialee h1 {
         width: 100%;
     }
     
@@ -443,5 +533,12 @@ h2[data-v-2ba6adc5] {
         --pfs: 18px;
         --h2fs: 28px;
         --stpfs: 14px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    :root {
+        --h3fsee: 42px;
+        --pfsee: 18px;
     }
 }

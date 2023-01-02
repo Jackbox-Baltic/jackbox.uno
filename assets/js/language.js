@@ -718,6 +718,25 @@ const manualtest= [
 
 const manualee= [
   {
+    s1t1: "Mängu alustamine on imelihtne! Jackbox Games mängude mängimisel kasutad oma nutiseadet (telefoni, tahvlit või arvutit) ja koos saab mängida 8 inimest, kuid vahel veel rohkemgi! Põhitegevus toimub teleka või arvuti ekraanil, aga mängijad kasutavad oma nutiseadet vastuse sisestamiseks ja hääletamiseks.",
+    s1t2: "Kõik Jackbox Games mängud on reitinguga T for Teen. Mitmel mängul on sätetes ka peresõbralik režiim, mis tekitab reitinguks E10+!",
+    s1t3: "Meelespea: ainult üks inimene peab omama mängu, et mängu alustada.",
+    
+    s2h1: "AVA MÄNG JA KRABA NUTISEADE",
+    s2t1: "Kui oled mängu välja valinud ja avanud, siis tekib ekraanile neljakohaline ruumikood.",
+    s2t2: "Ruumiga ühinemiseks iga mängija läheb oma nutiseadmel veebilehele jackbox.uno ning valib õige keele.",
+    
+    s3h1: "SISESTA RUUMIKOOD LEHEL JACKBOX.UNO",
+    s3t1: "Oma nutiseadmega veebilehel olles, sisesta neljakohaline ruumikood.",
+    s3t2: "Seejärel vali enda ekraaninimi, vajuta MÄNGI ja sa oled mängus sees!",
+    s3t3: "Jackbox Party Pack 9 mängus on võimalik ühineda mänguga ekraanilolevat QR-koodi skännides.",
+    s3t4: "Kui ühendus kaob, siis värskenda oma brauser - lahendus enamus probleemidele!",
+    
+    s4h1: "HAKKA MÄNGIMA!",
+    s4t1: "Ruumiga esimesena liitunud mängija on VIP. Kui kõik mängijad on ruumis ja valmis mängima, VIP saab alustada mängu oma nutiseadmest.",
+    s4t2: "Kui oled valinud sätetest \"Alusta mängu kontrolleriga\", siis mängu peab alustama ekraanile ilmuvast nupust.",
+    s4t3: "NB! \"KÕIK ON SEES\" või \"ALUSTA MÄNGU\" valikud ilmuvad ekraanile ainult juhul, kui ruumis on piisavalt mängijaid.",
+    
   }
 ];
 
@@ -903,6 +922,8 @@ const specialtest= [
 const specialee= [
   {
     class: "specialee",
+    howtoplay: "KUIDAS MÄNGIDA?",
+    howtoplayd: "Ehk siis soovid mängida Jackbox Games mänge? Ideaalne valik.",
   }
 ];
 
